@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://lris834ruac0"
+path="res://.godot/imported/SWIM.mp3-65416621a547824be02736e59b66dc8a.mp3str"
+
+[deps]
+
+source_file="res://BT21 CARRERA ESTELAR/Audio/musica_fondo.mp3/SWIM.mp3"
+dest_files=["res://.godot/imported/SWIM.mp3-65416621a547824be02736e59b66dc8a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

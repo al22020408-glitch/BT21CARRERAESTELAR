@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://2w5l24qppmuu"
+path="res://.godot/imported/Butter.mp3-a0d26ba734d71fbe90286cb6369ed77b.mp3str"
+
+[deps]
+
+source_file="res://BT21 CARRERA ESTELAR/Audio/musica_fondo.mp3/Butter.mp3"
+dest_files=["res://.godot/imported/Butter.mp3-a0d26ba734d71fbe90286cb6369ed77b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

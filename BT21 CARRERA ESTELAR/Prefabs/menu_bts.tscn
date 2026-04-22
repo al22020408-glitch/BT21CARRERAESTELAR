@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://r0xtvwomiy88"]
+
+[ext_resource type="PackedScene" uid="uid://cv8yydtcw0sjx" path="res://BT21 CARRERA ESTELAR/Scenes/menu_bts.tscn" id="1_56h6u"]
+
+[node name="MenuBts" unique_id=1404933182 instance=ExtResource("1_56h6u")]
