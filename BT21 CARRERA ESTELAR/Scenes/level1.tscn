@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cvsgnj4cddlk0"]
+
+[ext_resource type="Texture2D" uid="uid://dacql4tw1v2gi" path="res://BT21 CARRERA ESTELAR/Art/Fondos/fondo 2.png" id="1_lmvbr"]
+
+[node name="Level1" type="Control" unique_id=1590379079]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=852548795]
+layout_mode = 0
+offset_left = 5.0
+offset_top = -3.0
+offset_right = 429.0
+offset_bottom = 936.0
+texture = ExtResource("1_lmvbr")
+expand_mode = 1
+stretch_mode = 5

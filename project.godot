@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="BT21 CARRERA ESTELAR"
-run/main_scene="uid://d1gi2a8r5ipi0"
+run/main_scene="uid://b4hsgi2neahys"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
 
