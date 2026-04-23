@@ -1,12 +1,16 @@
 [gd_scene format=3 uid="uid://cvsgnj4cddlk0"]
 
+[ext_resource type="Script" uid="uid://bs1odyvi865y1" path="res://BT21 CARRERA ESTELAR/Scrips/level_1.gd" id="1_5kyf0"]
 [ext_resource type="Texture2D" uid="uid://dacql4tw1v2gi" path="res://BT21 CARRERA ESTELAR/Art/Fondos/fondo 2.png" id="1_lmvbr"]
+[ext_resource type="Texture2D" uid="uid://dfdqs1jleb5op" path="res://BT21 CARRERA ESTELAR/Art/UI/puntaje.png" id="3_2dlnu"]
+[ext_resource type="Texture2D" uid="uid://don1dtwlu7xkv" path="res://BT21 CARRERA ESTELAR/Art/UI/b_back.png" id="4_apf5n"]
 
 [node name="Level1" type="Control" unique_id=1590379079]
 layout_mode = 3
 anchors_preset = 0
+script = ExtResource("1_5kyf0")
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=852548795]
+[node name="Fondo" type="TextureRect" parent="." unique_id=852548795]
 layout_mode = 0
 offset_left = 5.0
 offset_top = -3.0
@@ -15,3 +19,30 @@ offset_bottom = 936.0
 texture = ExtResource("1_lmvbr")
 expand_mode = 1
 stretch_mode = 5
+
+[node name="Frutas" type="TextureRect" parent="Fondo" unique_id=936012962]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 8.0
+offset_right = 377.0
+offset_bottom = 414.0
+texture = ExtResource("3_2dlnu")
+expand_mode = 1
+
+[node name="BotonAtras" type="TextureButton" parent="Fondo" unique_id=1696759959]
+process_mode = 3
+clip_contents = true
+layout_mode = 0
+offset_left = 38.0
+offset_top = 23.0
+offset_right = 152.0
+offset_bottom = 73.0
+texture_normal = ExtResource("4_apf5n")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Jugador" type="CharacterBody2D" parent="." unique_id=383807526]
+
+[node name="Sprite2D" type="Sprite2D" parent="Jugador" unique_id=1588351835]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Jugador" unique_id=669436229]
