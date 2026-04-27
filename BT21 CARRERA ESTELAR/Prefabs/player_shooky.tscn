@@ -219,8 +219,8 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_7olj2"]
-size = Vector2(121, 99)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2hxsq"]
+size = Vector2(23, 11)
 
 [node name="Node2D" type="Node2D" unique_id=1078551791]
 metadata/_edit_horizontal_guides_ = [2057.0]
@@ -228,12 +228,12 @@ metadata/_edit_horizontal_guides_ = [2057.0]
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1874718091]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1079421082]
-position = Vector2(30.5, 0)
-scale = Vector2(1.0397135, 1)
+position = Vector2(1.507541, -1.2499994)
+scale = Vector2(0.10263643, 0.08333334)
 sprite_frames = SubResource("SpriteFrames_dtot6")
 animation = &"slide"
-frame_progress = 0.84029967
+frame_progress = 0.89192873
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=2068214009]
-position = Vector2(38.5, 0.5)
-shape = SubResource("RectangleShape2D_7olj2")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=399706219]
+position = Vector2(2.5, -2.5)
+shape = SubResource("RectangleShape2D_2hxsq")

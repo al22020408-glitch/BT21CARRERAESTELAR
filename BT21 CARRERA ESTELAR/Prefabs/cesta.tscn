@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://prscsutarq14"]
+
+[ext_resource type="Texture2D" uid="uid://rhoit58rvdgg" path="res://BT21 CARRERA ESTELAR/Art/UI/cesta.png" id="1_1w8yh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6ihif"]
+size = Vector2(63.875, 76.3125)
+
+[node name="Fruta" type="Area2D" unique_id=704562417]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2034299548]
+position = Vector2(182.5, 482.00003)
+scale = Vector2(0.08664022, 0.12499998)
+texture = ExtResource("1_1w8yh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1636366515]
+position = Vector2(182, 482.84375)
+shape = SubResource("RectangleShape2D_6ihif")

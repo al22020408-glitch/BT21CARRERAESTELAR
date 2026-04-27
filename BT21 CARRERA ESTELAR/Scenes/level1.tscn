@@ -1,9 +1,27 @@
 [gd_scene format=3 uid="uid://cvsgnj4cddlk0"]
 
 [ext_resource type="Script" uid="uid://bs1odyvi865y1" path="res://BT21 CARRERA ESTELAR/Scrips/level_1.gd" id="1_5kyf0"]
-[ext_resource type="Texture2D" uid="uid://dacql4tw1v2gi" path="res://BT21 CARRERA ESTELAR/Art/Fondos/fondo 2.png" id="1_lmvbr"]
-[ext_resource type="Texture2D" uid="uid://dfdqs1jleb5op" path="res://BT21 CARRERA ESTELAR/Art/UI/puntaje.png" id="3_2dlnu"]
+[ext_resource type="Texture2D" uid="uid://f4qx3g123q5c" path="res://BT21 CARRERA ESTELAR/Art/Fondos/vista (2).png" id="2_mq4w1"]
+[ext_resource type="PackedScene" uid="uid://bhikisiye1dyk" path="res://BT21 CARRERA ESTELAR/Prefabs/player.tscn" id="4_8rqsb"]
 [ext_resource type="Texture2D" uid="uid://don1dtwlu7xkv" path="res://BT21 CARRERA ESTELAR/Art/UI/b_back.png" id="4_apf5n"]
+[ext_resource type="PackedScene" uid="uid://b5hibdd5j7g1v" path="res://BT21 CARRERA ESTELAR/Prefabs/Fresa.tscn" id="5_affn5"]
+[ext_resource type="PackedScene" uid="uid://bcf30do13yt32" path="res://BT21 CARRERA ESTELAR/Prefabs/manzana.tscn" id="6_bep7h"]
+[ext_resource type="PackedScene" uid="uid://cst8mai2p8yjw" path="res://BT21 CARRERA ESTELAR/Prefabs/platano.tscn" id="7_o7oud"]
+[ext_resource type="PackedScene" uid="uid://bk4rj6a6p7gex" path="res://BT21 CARRERA ESTELAR/Prefabs/caja.tscn" id="8_cesvc"]
+[ext_resource type="PackedScene" uid="uid://prscsutarq14" path="res://BT21 CARRERA ESTELAR/Prefabs/cesta.tscn" id="8_cwq5u"]
+[ext_resource type="PackedScene" uid="uid://dqptxoctp2ldj" path="res://BT21 CARRERA ESTELAR/Prefabs/lodo.tscn" id="9_cni4d"]
+[ext_resource type="PackedScene" uid="uid://c0qsi8543wml1" path="res://BT21 CARRERA ESTELAR/Prefabs/dorada.tscn" id="10_affn5"]
+[ext_resource type="Texture2D" uid="uid://d31ep537l6vlt" path="res://BT21 CARRERA ESTELAR/Art/UI/bla.png" id="11_bep7h"]
+[ext_resource type="PackedScene" uid="uid://dh0dhhsbhivi2" path="res://BT21 CARRERA ESTELAR/Prefabs/estrella.tscn" id="11_cwq5u"]
+[ext_resource type="Texture2D" uid="uid://bp3wlqk60ojlt" path="res://BT21 CARRERA ESTELAR/Art/UI/pausa.png" id="12_cesvc"]
+[ext_resource type="Texture2D" uid="uid://603hw4m7ohik" path="res://BT21 CARRERA ESTELAR/Art/UI/play.png" id="13_cni4d"]
+[ext_resource type="Texture2D" uid="uid://koikdbluhbxb" path="res://BT21 CARRERA ESTELAR/Art/UI/m_puntaje.png" id="14_6l187"]
+[ext_resource type="FontFile" uid="uid://t0a1hdoyeac4" path="res://BT21 CARRERA ESTELAR/Art/UI/Larceny.ttf" id="15_b8x0y"]
+[ext_resource type="Texture2D" uid="uid://ccwwe0rhpuive" path="res://BT21 CARRERA ESTELAR/Art/UI/p_puntaje.png" id="15_cwq5u"]
+[ext_resource type="Texture2D" uid="uid://cfcq46bb7vjbf" path="res://BT21 CARRERA ESTELAR/Art/UI/f_puntaje.png" id="16_b8x0y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5yq3u"]
+size = Vector2(21.277836, 14.073231)
 
 [node name="Level1" type="Control" unique_id=1590379079]
 layout_mode = 3
@@ -16,33 +34,283 @@ offset_left = 5.0
 offset_top = -3.0
 offset_right = 429.0
 offset_bottom = 936.0
-texture = ExtResource("1_lmvbr")
+texture = ExtResource("2_mq4w1")
 expand_mode = 1
-stretch_mode = 5
-
-[node name="Frutas" type="TextureRect" parent="Fondo" unique_id=936012962]
-layout_mode = 0
-offset_left = 50.0
-offset_top = 8.0
-offset_right = 377.0
-offset_bottom = 414.0
-texture = ExtResource("3_2dlnu")
-expand_mode = 1
+stretch_mode = 6
 
 [node name="BotonAtras" type="TextureButton" parent="Fondo" unique_id=1696759959]
 process_mode = 3
 clip_contents = true
 layout_mode = 0
-offset_left = 38.0
-offset_top = 23.0
-offset_right = 152.0
-offset_bottom = 73.0
+offset_left = -11.0
+offset_top = -1.0
+offset_right = 103.0
+offset_bottom = 49.0
 texture_normal = ExtResource("4_apf5n")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="Jugador" type="CharacterBody2D" parent="." unique_id=383807526]
+position = Vector2(72.99999, 775)
+scale = Vector2(4.605732, 15.490404)
 
 [node name="Sprite2D" type="Sprite2D" parent="Jugador" unique_id=1588351835]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Jugador" unique_id=669436229]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Jugador" unique_id=395359886]
+position = Vector2(9.536743e-07, -1.2911263)
+scale = Vector2(1, 0.9999999)
+shape = SubResource("RectangleShape2D_5yq3u")
+
+[node name="Node2D" parent="Jugador" unique_id=1078551791 instance=ExtResource("4_8rqsb")]
+position = Vector2(-1.5198436, -1.2911217)
+
+[node name="Fresas" type="Node2D" parent="." unique_id=795183608]
+
+[node name="fresa" parent="Fresas" unique_id=704562417 instance=ExtResource("5_affn5")]
+position = Vector2(-20, -61)
+
+[node name="manzana" parent="Fresas" unique_id=1554227080 instance=ExtResource("6_bep7h")]
+position = Vector2(-101, 108)
+
+[node name="platano" parent="Fresas" unique_id=1092089146 instance=ExtResource("7_o7oud")]
+position = Vector2(115, 15)
+
+[node name="cesta" parent="Fresas" unique_id=1285781950 instance=ExtResource("8_cwq5u")]
+position = Vector2(24, 202)
+
+[node name="Obstaculos" type="Node2D" parent="." unique_id=1071445475]
+
+[node name="caja" parent="Obstaculos" unique_id=32237068 instance=ExtResource("8_cesvc")]
+position = Vector2(60, 313)
+
+[node name="lodo" parent="Obstaculos" unique_id=416651617 instance=ExtResource("9_cni4d")]
+position = Vector2(156, 175)
+
+[node name="premio" type="Node2D" parent="." unique_id=227635381]
+
+[node name="manzanadorada" parent="premio" unique_id=1157777249 instance=ExtResource("10_affn5")]
+position = Vector2(11, 118)
+
+[node name="Estrella" parent="premio" unique_id=1864525959 instance=ExtResource("11_cwq5u")]
+visible = false
+position = Vector2(10, -139)
+
+[node name="Node2D" type="CanvasLayer" parent="." unique_id=2043927146]
+
+[node name="UI" type="Control" parent="Node2D" unique_id=772827272]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="HUD" type="Control" parent="Node2D/UI" unique_id=1110471609]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ScoreContainer" type="Control" parent="Node2D/UI/HUD" unique_id=1505173003]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Score_BG" type="TextureRect" parent="Node2D/UI/HUD/ScoreContainer" unique_id=976248171]
+layout_mode = 0
+offset_left = 296.0
+offset_top = 29.0
+offset_right = 417.0
+offset_bottom = 93.0
+texture = ExtResource("11_bep7h")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Label_Score" type="Label" parent="Node2D/UI/HUD/ScoreContainer" unique_id=909873986]
+layout_mode = 0
+offset_left = 335.0
+offset_top = 46.0
+offset_right = 375.0
+offset_bottom = 74.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("15_b8x0y")
+theme_override_font_sizes/font_size = 27
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Btn_Pausa" type="TextureButton" parent="Node2D/UI/HUD" unique_id=1711758056]
+layout_mode = 0
+offset_left = 373.0
+offset_top = 879.0
+offset_right = 426.0
+offset_bottom = 924.0
+texture_normal = ExtResource("12_cesvc")
+ignore_texture_size = true
+stretch_mode = 6
+
+[node name="Btn_Play" type="TextureButton" parent="Node2D/UI/HUD" unique_id=439920602]
+visible = false
+layout_mode = 0
+offset_left = 324.0
+offset_top = 874.0
+offset_right = 369.0
+offset_bottom = 922.0
+texture_normal = ExtResource("13_cni4d")
+ignore_texture_size = true
+stretch_mode = 6
+
+[node name="Node2D" type="Node2D" parent="Node2D/UI/HUD" unique_id=1260415887]
+
+[node name="Label_Vidas" type="Label" parent="Node2D/UI/HUD/Node2D" unique_id=1840037079]
+offset_left = 113.0
+offset_top = 849.0
+offset_right = 308.0
+offset_bottom = 895.0
+theme_override_fonts/font = ExtResource("15_b8x0y")
+theme_override_font_sizes/font_size = 38
+text = "lives: 3"
+horizontal_alignment = 1
+
+[node name="FrutasUI2" type="Control" parent="Node2D/UI" unique_id=700121638]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="FrutasUI" type="Node2D" parent="Node2D/UI/FrutasUI2" unique_id=722227272]
+
+[node name="Manzana_OFF" type="TextureRect" parent="Node2D/UI/FrutasUI2/FrutasUI" unique_id=291532989]
+modulate = Color(0.34384766, 0.34384766, 0.34384766, 1)
+offset_left = 19.0
+offset_top = 45.0
+offset_right = 71.0
+offset_bottom = 102.0
+texture = ExtResource("14_6l187")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Manzana_ON2" type="TextureRect" parent="Node2D/UI/FrutasUI2/FrutasUI" unique_id=1002201195]
+visible = false
+modulate = Color(1.0662901, 1.0662901, 1.0662901, 1)
+offset_left = 19.0
+offset_top = 45.0
+offset_right = 71.0
+offset_bottom = 102.0
+texture = ExtResource("14_6l187")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Platano_OFF2" type="TextureRect" parent="Node2D/UI/FrutasUI2/FrutasUI" unique_id=660262249]
+modulate = Color(0.34384766, 0.34384766, 0.34384766, 1)
+offset_left = 68.0
+offset_top = 47.0
+offset_right = 120.0
+offset_bottom = 104.0
+texture = ExtResource("15_cwq5u")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Platano_ON3" type="TextureRect" parent="Node2D/UI/FrutasUI2/FrutasUI" unique_id=1797898459]
+visible = false
+offset_left = 68.0
+offset_top = 47.0
+offset_right = 120.0
+offset_bottom = 104.0
+texture = ExtResource("15_cwq5u")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Fresa_OFF3" type="TextureRect" parent="Node2D/UI/FrutasUI2/FrutasUI" unique_id=1991539892]
+modulate = Color(0.34384766, 0.34384766, 0.34384766, 1)
+offset_left = 122.0
+offset_top = 48.0
+offset_right = 174.0
+offset_bottom = 105.0
+texture = ExtResource("16_b8x0y")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Fresa_ON4" type="TextureRect" parent="Node2D/UI/FrutasUI2/FrutasUI" unique_id=1292434280]
+visible = false
+offset_left = 122.0
+offset_top = 48.0
+offset_right = 174.0
+offset_bottom = 105.0
+texture = ExtResource("16_b8x0y")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Feedback" type="Control" parent="Node2D/UI" unique_id=544699967]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label_Jump" type="Label" parent="Node2D/UI/Feedback" unique_id=747555948]
+visible = false
+layout_mode = 0
+offset_left = 148.0
+offset_top = 644.0
+offset_right = 260.0
+offset_bottom = 675.0
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_fonts/font = ExtResource("15_b8x0y")
+theme_override_font_sizes/font_size = 35
+text = "JUMP!"
+horizontal_alignment = 1
+
+[node name="Label_Puntos" type="Label" parent="Node2D/UI/Feedback" unique_id=1463475684]
+visible = false
+layout_mode = 0
+offset_left = 86.0
+offset_top = 616.0
+offset_right = 134.0
+offset_bottom = 655.0
+theme_override_fonts/font = ExtResource("15_b8x0y")
+theme_override_font_sizes/font_size = 31
+text = "+10"
+
+[node name="Label_2000" type="Label" parent="Node2D/UI/Feedback" unique_id=1933046452]
+visible = false
+layout_mode = 0
+offset_left = 163.0
+offset_top = 299.0
+offset_right = 292.0
+offset_bottom = 362.0
+theme_override_colors/font_color = Color(0.95550007, 1, 0.110000014, 1)
+theme_override_fonts/font = ExtResource("15_b8x0y")
+theme_override_font_sizes/font_size = 45
+text = "+2000"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label_500" type="Label" parent="Node2D/UI/Feedback" unique_id=1459184630]
+visible = false
+layout_mode = 0
+offset_left = 171.0
+offset_top = 445.0
+offset_right = 242.0
+offset_bottom = 536.0
+theme_override_colors/font_color = Color(1, 1, 0.023529412, 1)
+theme_override_fonts/font = ExtResource("15_b8x0y")
+theme_override_font_sizes/font_size = 31
+text = "+500
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Mensajes" type="Control" parent="Node2D/UI" unique_id=345779883]
+anchors_preset = 0
+offset_left = 109.0
+offset_top = 187.0
+offset_right = 149.0
+offset_bottom = 227.0
+
+[node name="Ganaste" type="Label" parent="Node2D/UI/Mensajes" unique_id=1551073844]
+visible = false
+layout_mode = 0
+offset_left = -57.0
+offset_top = 262.0
+offset_right = 283.0
+offset_bottom = 339.0
+theme_override_colors/font_color = Color(1, 1, 0.047058824, 1)
+theme_override_fonts/font = ExtResource("15_b8x0y")
+theme_override_font_sizes/font_size = 55
+text = "¡GANASTE!"
+horizontal_alignment = 1
+vertical_alignment = 1

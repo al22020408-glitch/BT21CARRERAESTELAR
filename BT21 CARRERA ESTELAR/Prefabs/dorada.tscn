@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c0qsi8543wml1"]
+
+[ext_resource type="Texture2D" uid="uid://c7ejh4wfoc65c" path="res://BT21 CARRERA ESTELAR/Art/UI/dorada.png" id="1_kw3th"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rr6oj"]
+size = Vector2(54.4375, 47.6875)
+
+[node name="Dorada" type="Area2D" unique_id=1157777249]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1919331732]
+position = Vector2(200.00002, 459.99997)
+scale = Vector2(0.09133729, 0.08989535)
+texture = ExtResource("1_kw3th")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=3483096]
+position = Vector2(200, 463)
+shape = SubResource("RectangleShape2D_rr6oj")

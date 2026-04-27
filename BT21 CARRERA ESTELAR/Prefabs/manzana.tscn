@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bcf30do13yt32"]
+
+[ext_resource type="Texture2D" uid="uid://cl7dsr4tuyutl" path="res://BT21 CARRERA ESTELAR/Art/UI/manzana.png" id="1_i8e7r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6ihif"]
+size = Vector2(42.4375, 38.5)
+
+[node name="Fruta" type="Area2D" unique_id=704562417]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2034299548]
+position = Vector2(189.21558, 499.5)
+scale = Vector2(0.15639874, 0.1656627)
+texture = ExtResource("1_i8e7r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1636366515]
+position = Vector2(187, 501)
+shape = SubResource("RectangleShape2D_6ihif")

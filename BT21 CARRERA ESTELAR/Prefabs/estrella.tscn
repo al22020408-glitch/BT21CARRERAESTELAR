@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dh0dhhsbhivi2"]
+
+[ext_resource type="Texture2D" uid="uid://cd8xodn1g80gu" path="res://BT21 CARRERA ESTELAR/Art/UI/estrella.png" id="1_n4utq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vrlgs"]
+size = Vector2(119, 105.5)
+
+[node name="Estrella" type="Area2D" unique_id=1864525959]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1935093612]
+position = Vector2(204, 485.99997)
+scale = Vector2(0.983533, 1.0182118)
+texture = ExtResource("1_n4utq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=93953602]
+position = Vector2(210, 490)
+shape = SubResource("RectangleShape2D_vrlgs")
