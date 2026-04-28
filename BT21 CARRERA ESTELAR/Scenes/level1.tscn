@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://bhikisiye1dyk" path="res://BT21 CARRERA ESTELAR/Prefabs/player.tscn" id="4_8rqsb"]
 [ext_resource type="Texture2D" uid="uid://don1dtwlu7xkv" path="res://BT21 CARRERA ESTELAR/Art/UI/b_back.png" id="4_apf5n"]
 [ext_resource type="PackedScene" uid="uid://b5hibdd5j7g1v" path="res://BT21 CARRERA ESTELAR/Prefabs/Fresa.tscn" id="5_affn5"]
+[ext_resource type="PackedScene" uid="uid://dgmg7qjqgc4l5" path="res://BT21 CARRERA ESTELAR/Prefabs/player_Rj.tscn" id="5_jun7q"]
 [ext_resource type="PackedScene" uid="uid://bcf30do13yt32" path="res://BT21 CARRERA ESTELAR/Prefabs/manzana.tscn" id="6_bep7h"]
 [ext_resource type="PackedScene" uid="uid://cst8mai2p8yjw" path="res://BT21 CARRERA ESTELAR/Prefabs/platano.tscn" id="7_o7oud"]
 [ext_resource type="PackedScene" uid="uid://bk4rj6a6p7gex" path="res://BT21 CARRERA ESTELAR/Prefabs/caja.tscn" id="8_cesvc"]
@@ -57,12 +58,15 @@ scale = Vector2(4.605732, 15.490404)
 [node name="Sprite2D" type="Sprite2D" parent="Jugador" unique_id=1588351835]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Jugador" unique_id=395359886]
-position = Vector2(9.536743e-07, -1.2911263)
+position = Vector2(37.127647, -4.777151)
 scale = Vector2(1, 0.9999999)
 shape = SubResource("RectangleShape2D_5yq3u")
 
 [node name="Node2D" parent="Jugador" unique_id=1078551791 instance=ExtResource("4_8rqsb")]
-position = Vector2(-1.5198436, -1.2911217)
+position = Vector2(-0.2171191, -4.8417068)
+
+[node name="Node2D" parent="Jugador/Node2D" unique_id=1025470568 instance=ExtResource("5_jun7q")]
+position = Vector2(11.5074, 1.2265658)
 
 [node name="Fresas" type="Node2D" parent="." unique_id=795183608]
 
