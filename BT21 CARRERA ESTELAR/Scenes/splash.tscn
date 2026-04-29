@@ -16,9 +16,16 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+<<<<<<< Updated upstream
 offset_top = 1.0
 offset_right = 431.0
 offset_bottom = 934.99994
+=======
+offset_left = -93.0
+offset_top = -84.0
+offset_right = 524.0
+offset_bottom = 940.0
+>>>>>>> Stashed changes
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_hm2pc")
