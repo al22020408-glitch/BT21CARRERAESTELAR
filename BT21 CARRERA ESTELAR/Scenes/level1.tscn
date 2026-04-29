@@ -63,10 +63,10 @@ scale = Vector2(1, 0.9999999)
 shape = SubResource("RectangleShape2D_5yq3u")
 
 [node name="Node2D" parent="Jugador" unique_id=1078551791 instance=ExtResource("4_8rqsb")]
-position = Vector2(-0.2171191, -4.8417068)
+position = Vector2(-3.039689, -4.3252583)
 
 [node name="Node2D" parent="Jugador/Node2D" unique_id=1025470568 instance=ExtResource("5_jun7q")]
-position = Vector2(11.5074, 1.2265658)
+position = Vector2(9.553313, 0.71011543)
 
 [node name="Fresas" type="Node2D" parent="." unique_id=795183608]
 
