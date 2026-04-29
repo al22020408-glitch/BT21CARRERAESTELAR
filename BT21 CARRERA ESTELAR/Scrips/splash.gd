@@ -1,39 +1,31 @@
 extends Control
 
 # Ruta de la escena del menú
-# Cambia esta línea:
 @export var escena_menu = "res://BT21 CARRERA ESTELAR/Scenes/MenuBts.tscn"
 
-# Referencia al nodo del logo (TextureRect2)
-@onready var logo = $TextureRect2 
-
-var posicion_final_y: float 
+# Referencia actualizada al nuevo nombre del nodo
+@onready var label_cargando = $Fondo/LabelCargando
 
 func _ready():
-	# 1. Guardamos la posición donde pusiste el logo en el editor (la meta)
-	posicion_final_y = logo.position.y
+	# Centramos el pivote para que el efecto de escala sea desde el medio del texto
+	label_cargando.pivot_offset = label_cargando.size / 2
 	
-	# 2. Movemos el logo ARRIBA, fuera de la pantalla.
-	# Usamos el tamaño del logo en negativo para que se oculte por completo.
-	logo.position.y = -logo.size.y - 100 
+	# Iniciamos el efecto de "respiración"
+	iniciar_efecto_cargando()
 	
-	# 3. Iniciamos la caída
-	iniciar_animacion_caida()
-	
-	# 4. Conectamos el Timer para cambiar de escena
+	# Conectamos el Timer
 	$Timer.timeout.connect(_on_timer_timeout)
 
-func iniciar_animacion_caida():
-	var tween = create_tween()
+func iniciar_efecto_cargando():
+	var tween = create_tween().set_loops()
 	
-	# Transición hacia la posición final en 1.2 segundos
-	tween.tween_property(logo, "position:y", posicion_final_y, 1.2)
+	# Efecto de latido suave (crece y encoge)
+	tween.tween_property(label_cargando, "scale", Vector2(1.1, 1.1), 0.8).set_trans(Tween.TRANS_SINE)
+	tween.tween_property(label_cargando, "scale", Vector2(1.0, 1.0), 0.8).set_trans(Tween.TRANS_SINE)
 	
-	# Configuración de suavizado
-	tween.set_ease(Tween.EASE_OUT)
-	
-	# TRANS_BACK le dará un rebote muy tierno al llegar, ideal para BT21
-	tween.set_trans(Tween.TRANS_BACK) 
+	# PLUS: Vamos a hacer que el texto parpadee un poco (opacidad) para que parezca más "Cargando"
+	tween.parallel().tween_property(label_cargando, "modulate:a", 0.6, 0.8)
+	tween.parallel().tween_property(label_cargando, "modulate:a", 1.0, 0.8)
 
 func _on_timer_timeout():
 	get_tree().change_scene_to_file(escena_menu)

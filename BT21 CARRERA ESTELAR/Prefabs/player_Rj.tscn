@@ -221,6 +221,7 @@ metadata/_edit_horizontal_guides_ = [2057.0]
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1874718091]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1079421082]
+<<<<<<< Updated upstream
 position = Vector2(30.5, 0)
 scale = Vector2(1.0397135, 1)
 sprite_frames = SubResource("SpriteFrames_dtot6")
@@ -229,4 +230,14 @@ frame_progress = 0.161704
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=2068214009]
 position = Vector2(44, 1)
+=======
+position = Vector2(-2.6013238, -1.3749994)
+scale = Vector2(0.11094663, 0.11867087)
+sprite_frames = SubResource("SpriteFrames_dtot6")
+animation = &"idel"
+frame_progress = 0.24203084
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=2068214009]
+position = Vector2(-1, -2)
+>>>>>>> Stashed changes
 shape = SubResource("RectangleShape2D_7olj2")

@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://b4hsgi2neahys"]
 
 [ext_resource type="Script" uid="uid://2tmbktqgairc" path="res://BT21 CARRERA ESTELAR/Scrips/splash.gd" id="1_fit8s"]
-[ext_resource type="Texture2D" uid="uid://durrgqngb2hx2" path="res://BT21 CARRERA ESTELAR/Art/Fondos/fondo3.png" id="1_hm2pc"]
 [ext_resource type="Texture2D" uid="uid://dh3tsa0onhc2m" path="res://BT21 CARRERA ESTELAR/Art/UI/logo-godot.png" id="2_fit8s"]
-[ext_resource type="Texture2D" uid="uid://b8hfl2cge2gro" path="res://BT21 CARRERA ESTELAR/Art/Fondos/fondo 4.png" id="3_2deiw"]
+[ext_resource type="Texture2D" uid="uid://ce7fl5ktm7vxk" path="res://BT21 CARRERA ESTELAR/Art/Fondos/fondo5.png" id="2_hm2pc"]
+[ext_resource type="FontFile" uid="uid://t0a1hdoyeac4" path="res://BT21 CARRERA ESTELAR/Art/UI/Larceny.ttf" id="4_fit8s"]
 
 [node name="Splash" type="Control" unique_id=338127366]
 layout_mode = 3
@@ -11,39 +11,87 @@ anchors_preset = 0
 script = ExtResource("1_fit8s")
 metadata/_edit_horizontal_guides_ = [406.0]
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=212913230]
+[node name="Fondo" type="TextureRect" parent="." unique_id=212913230]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = 1.0
-offset_right = 431.0
-offset_bottom = 934.99994
+offset_left = -93.0
+offset_top = -93.0
+offset_right = 524.0
+offset_bottom = 931.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_hm2pc")
+texture = ExtResource("2_hm2pc")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="TextureRect" type="TextureRect" parent="TextureRect" unique_id=1148546608]
+[node name="LogoGodot" type="TextureRect" parent="Fondo" unique_id=1148546608]
 layout_mode = 0
-offset_left = 162.0
-offset_top = 749.00006
-offset_right = 650.0
-offset_bottom = 1297.0
+offset_left = 272.0
+offset_top = 911.99994
+offset_right = 609.4996
+offset_bottom = 1268.3337
 scale = Vector2(0.24000028, 0.2400006)
 texture = ExtResource("2_fit8s")
-
-[node name="TextureRect2" type="TextureRect" parent="." unique_id=804248389]
-layout_mode = 0
-offset_left = 55.0
-offset_top = 186.0
-offset_right = 543.0
-offset_bottom = 734.0
-scale = Vector2(0.79999983, 0.72)
-texture = ExtResource("3_2deiw")
 expand_mode = 1
-stretch_mode = 5
+
+[node name="LabelTitulo1" type="Label" parent="Fondo" unique_id=737690074]
+layout_mode = 0
+offset_left = 145.0
+offset_top = 241.0
+offset_right = 464.0
+offset_bottom = 295.0
+theme_override_colors/font_color = Color(0.78431374, 0.16078432, 0.03529412, 1)
+theme_override_colors/font_shadow_color = Color(0.019607844, 0.08627451, 0.03529412, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_fit8s")
+theme_override_font_sizes/font_size = 60
+text = "¡CORRE, SALTA Y "
+
+[node name="LabelTitulo2" type="Label" parent="Fondo" unique_id=1862690876]
+layout_mode = 0
+offset_left = 214.0
+offset_top = 303.0
+offset_right = 392.0
+offset_bottom = 404.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_fit8s")
+theme_override_font_sizes/font_size = 55
+text = "BT21
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LabelTitulo3" type="Label" parent="Fondo" unique_id=767031967]
+layout_mode = 0
+offset_left = 126.0
+offset_top = 794.0
+offset_right = 486.0
+offset_bottom = 848.0
+theme_override_colors/font_color = Color(0.78431374, 0.16078432, 0.03529412, 1)
+theme_override_colors/font_shadow_color = Color(0.019607844, 0.08627451, 0.03529412, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_fit8s")
+theme_override_font_sizes/font_size = 60
+text = "Recolecta frutas!"
+
+[node name="LabelCargando" type="Label" parent="Fondo" unique_id=655875859]
+layout_mode = 0
+offset_left = 227.0
+offset_top = 820.0
+offset_right = 405.0
+offset_bottom = 921.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_fit8s")
+theme_override_font_sizes/font_size = 35
+text = "Cargando ..."
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Timer" type="Timer" parent="." unique_id=1243980805]
 wait_time = 3.0
