@@ -1,37 +1,35 @@
-[gd_scene format=3 uid="uid://cvsgnj4cddlk0"]
+[gd_scene format=3 uid="uid://bqvh1v6upr61k"]
 
-[ext_resource type="Script" uid="uid://bs1odyvi865y1" path="res://BT21 CARRERA ESTELAR/Scrips/level_1.gd" id="1_5kyf0"]
-[ext_resource type="Texture2D" uid="uid://f4qx3g123q5c" path="res://BT21 CARRERA ESTELAR/Art/Fondos/vista (2).png" id="2_mq4w1"]
-[ext_resource type="PackedScene" uid="uid://c55d6xi3gea3l" path="res://BT21 CARRERA ESTELAR/Prefabs/player_koya.tscn" id="4_5yq3u"]
-[ext_resource type="Texture2D" uid="uid://don1dtwlu7xkv" path="res://BT21 CARRERA ESTELAR/Art/UI/b_back.png" id="4_apf5n"]
-[ext_resource type="Script" uid="uid://f51lacj8a0u4" path="res://BT21 CARRERA ESTELAR/Scrips/player_movement.gd" id="4_jun7q"]
-[ext_resource type="PackedScene" uid="uid://b5hibdd5j7g1v" path="res://BT21 CARRERA ESTELAR/Prefabs/Fresa.tscn" id="5_affn5"]
-[ext_resource type="PackedScene" uid="uid://bcf30do13yt32" path="res://BT21 CARRERA ESTELAR/Prefabs/manzana.tscn" id="6_bep7h"]
-[ext_resource type="PackedScene" uid="uid://cst8mai2p8yjw" path="res://BT21 CARRERA ESTELAR/Prefabs/platano.tscn" id="7_o7oud"]
-[ext_resource type="PackedScene" uid="uid://bk4rj6a6p7gex" path="res://BT21 CARRERA ESTELAR/Prefabs/caja.tscn" id="8_cesvc"]
-[ext_resource type="PackedScene" uid="uid://prscsutarq14" path="res://BT21 CARRERA ESTELAR/Prefabs/cesta.tscn" id="8_cwq5u"]
-[ext_resource type="PackedScene" uid="uid://dqptxoctp2ldj" path="res://BT21 CARRERA ESTELAR/Prefabs/lodo.tscn" id="9_cni4d"]
-[ext_resource type="PackedScene" uid="uid://c0qsi8543wml1" path="res://BT21 CARRERA ESTELAR/Prefabs/dorada.tscn" id="10_affn5"]
-[ext_resource type="Texture2D" uid="uid://d31ep537l6vlt" path="res://BT21 CARRERA ESTELAR/Art/UI/bla.png" id="11_bep7h"]
-[ext_resource type="PackedScene" uid="uid://dh0dhhsbhivi2" path="res://BT21 CARRERA ESTELAR/Prefabs/estrella.tscn" id="11_cwq5u"]
-[ext_resource type="Texture2D" uid="uid://bp3wlqk60ojlt" path="res://BT21 CARRERA ESTELAR/Art/UI/pausa.png" id="12_cesvc"]
-[ext_resource type="Texture2D" uid="uid://603hw4m7ohik" path="res://BT21 CARRERA ESTELAR/Art/UI/play.png" id="13_cni4d"]
-[ext_resource type="Texture2D" uid="uid://koikdbluhbxb" path="res://BT21 CARRERA ESTELAR/Art/UI/m_puntaje.png" id="14_6l187"]
-[ext_resource type="FontFile" uid="uid://t0a1hdoyeac4" path="res://BT21 CARRERA ESTELAR/Art/UI/Larceny.ttf" id="15_b8x0y"]
-[ext_resource type="Texture2D" uid="uid://ccwwe0rhpuive" path="res://BT21 CARRERA ESTELAR/Art/UI/p_puntaje.png" id="15_cwq5u"]
-[ext_resource type="Texture2D" uid="uid://cfcq46bb7vjbf" path="res://BT21 CARRERA ESTELAR/Art/UI/f_puntaje.png" id="16_b8x0y"]
+[ext_resource type="Script" uid="uid://bs1odyvi865y1" path="res://BT21 CARRERA ESTELAR/Scrips/level_1.gd" id="1_mg1un"]
+[ext_resource type="Texture2D" uid="uid://djgt4ecyyh34t" path="res://BT21 CARRERA ESTELAR/Art/UI/vistanoche.png" id="2_mg1un"]
+[ext_resource type="Texture2D" uid="uid://don1dtwlu7xkv" path="res://BT21 CARRERA ESTELAR/Art/UI/b_back.png" id="3_dut1c"]
+[ext_resource type="PackedScene" uid="uid://bhikisiye1dyk" path="res://BT21 CARRERA ESTELAR/Prefabs/player.tscn" id="4_7h50j"]
+[ext_resource type="PackedScene" path="res://BT21 CARRERA ESTELAR/Prefabs/Fresa.tscn" id="5_eyhtg"]
+[ext_resource type="PackedScene" path="res://BT21 CARRERA ESTELAR/Prefabs/manzana.tscn" id="6_4l3fk"]
+[ext_resource type="PackedScene" path="res://BT21 CARRERA ESTELAR/Prefabs/platano.tscn" id="7_epayj"]
+[ext_resource type="PackedScene" path="res://BT21 CARRERA ESTELAR/Prefabs/cesta.tscn" id="8_athao"]
+[ext_resource type="PackedScene" path="res://BT21 CARRERA ESTELAR/Prefabs/caja.tscn" id="9_ffh3h"]
+[ext_resource type="PackedScene" path="res://BT21 CARRERA ESTELAR/Prefabs/lodo.tscn" id="10_2ym6w"]
+[ext_resource type="PackedScene" path="res://BT21 CARRERA ESTELAR/Prefabs/dorada.tscn" id="11_1bljj"]
+[ext_resource type="PackedScene" path="res://BT21 CARRERA ESTELAR/Prefabs/estrella.tscn" id="12_e7li8"]
+[ext_resource type="Texture2D" uid="uid://d31ep537l6vlt" path="res://BT21 CARRERA ESTELAR/Art/UI/bla.png" id="13_d7n0n"]
+[ext_resource type="FontFile" uid="uid://t0a1hdoyeac4" path="res://BT21 CARRERA ESTELAR/Art/UI/Larceny.ttf" id="14_6orcm"]
+[ext_resource type="Texture2D" uid="uid://bp3wlqk60ojlt" path="res://BT21 CARRERA ESTELAR/Art/UI/pausa.png" id="15_rvjov"]
+[ext_resource type="Texture2D" uid="uid://603hw4m7ohik" path="res://BT21 CARRERA ESTELAR/Art/UI/play.png" id="16_mxiq0"]
+[ext_resource type="Texture2D" uid="uid://koikdbluhbxb" path="res://BT21 CARRERA ESTELAR/Art/UI/m_puntaje.png" id="17_mpypr"]
+[ext_resource type="Texture2D" uid="uid://ccwwe0rhpuive" path="res://BT21 CARRERA ESTELAR/Art/UI/p_puntaje.png" id="18_36bym"]
+[ext_resource type="Texture2D" uid="uid://cfcq46bb7vjbf" path="res://BT21 CARRERA ESTELAR/Art/UI/f_puntaje.png" id="19_0flud"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5yq3u"]
-size = Vector2(20.849817, 14.331453)
+size = Vector2(16.718296, 9.360636)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jun7q"]
-size = Vector2(422, 225)
+size = Vector2(430, 239.25)
 
 [node name="Level1" type="Control" unique_id=1590379079]
-process_mode = 3
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("1_5kyf0")
+script = ExtResource("1_mg1un")
 
 [node name="Fondo" type="TextureRect" parent="." unique_id=852548795]
 layout_mode = 0
@@ -39,7 +37,7 @@ offset_left = 5.0
 offset_top = -3.0
 offset_right = 429.0
 offset_bottom = 936.0
-texture = ExtResource("2_mq4w1")
+texture = ExtResource("2_mg1un")
 expand_mode = 1
 stretch_mode = 6
 
@@ -51,51 +49,55 @@ offset_left = -11.0
 offset_top = -1.0
 offset_right = 103.0
 offset_bottom = 49.0
-texture_normal = ExtResource("4_apf5n")
+texture_normal = ExtResource("3_dut1c")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="Jugador" type="CharacterBody2D" parent="." unique_id=383807526]
 position = Vector2(72.99999, 775)
 scale = Vector2(4.605732, 15.490404)
-script = ExtResource("4_jun7q")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Jugador" unique_id=226933266]
-position = Vector2(-0.6544733, -3.8088112)
+position = Vector2(0.43424273, -3.93792)
 scale = Vector2(1, 0.99999976)
 shape = SubResource("RectangleShape2D_5yq3u")
 
-[node name="Node2D2" parent="Jugador" unique_id=1078551791 instance=ExtResource("4_5yq3u")]
-position = Vector2(0.6513641, -1.8075706)
+[node name="Node2D" parent="Jugador" unique_id=1078551791 instance=ExtResource("4_7h50j")]
+clip_children = 1
+position = Vector2(1.4007092e-06, -4.5189266)
 
 [node name="Fresas" type="Node2D" parent="." unique_id=795183608]
+visible = false
 
-[node name="fresa" parent="Fresas" unique_id=704562417 instance=ExtResource("5_affn5")]
+[node name="fresa" parent="Fresas" unique_id=704562417 instance=ExtResource("5_eyhtg")]
+visible = false
 position = Vector2(-20, -61)
 
-[node name="manzana" parent="Fresas" unique_id=1554227080 instance=ExtResource("6_bep7h")]
+[node name="manzana" parent="Fresas" unique_id=1554227080 instance=ExtResource("6_4l3fk")]
 position = Vector2(-41, 73)
 
-[node name="platano" parent="Fresas" unique_id=1092089146 instance=ExtResource("7_o7oud")]
+[node name="platano" parent="Fresas" unique_id=1092089146 instance=ExtResource("7_epayj")]
 position = Vector2(115, 15)
 
-[node name="cesta" parent="Fresas" unique_id=1285781950 instance=ExtResource("8_cwq5u")]
+[node name="cesta" parent="Fresas" unique_id=1285781950 instance=ExtResource("8_athao")]
 position = Vector2(18, 181)
 
 [node name="Obstaculos" type="Node2D" parent="." unique_id=1071445475]
+visible = false
 
-[node name="caja" parent="Obstaculos" unique_id=32237068 instance=ExtResource("8_cesvc")]
+[node name="caja" parent="Obstaculos" unique_id=32237068 instance=ExtResource("9_ffh3h")]
 position = Vector2(146, 271)
 
-[node name="lodo" parent="Obstaculos" unique_id=416651617 instance=ExtResource("9_cni4d")]
+[node name="lodo" parent="Obstaculos" unique_id=416651617 instance=ExtResource("10_2ym6w")]
 position = Vector2(17, 264)
 
 [node name="premio" type="Node2D" parent="." unique_id=227635381]
+visible = false
 
-[node name="manzanadorada" parent="premio" unique_id=1157777249 instance=ExtResource("10_affn5")]
+[node name="manzanadorada" parent="premio" unique_id=1157777249 instance=ExtResource("11_1bljj")]
 position = Vector2(11, 118)
 
-[node name="Estrella" parent="premio" unique_id=1864525959 instance=ExtResource("11_cwq5u")]
+[node name="Estrella" parent="premio" unique_id=1864525959 instance=ExtResource("12_e7li8")]
 visible = false
 position = Vector2(10, -139)
 
@@ -121,7 +123,7 @@ offset_left = 296.0
 offset_top = 29.0
 offset_right = 417.0
 offset_bottom = 93.0
-texture = ExtResource("11_bep7h")
+texture = ExtResource("13_d7n0n")
 expand_mode = 1
 stretch_mode = 6
 
@@ -132,7 +134,7 @@ offset_top = 46.0
 offset_right = 375.0
 offset_bottom = 74.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("15_b8x0y")
+theme_override_fonts/font = ExtResource("14_6orcm")
 theme_override_font_sizes/font_size = 27
 text = "0"
 horizontal_alignment = 1
@@ -144,7 +146,7 @@ offset_left = 373.0
 offset_top = 879.0
 offset_right = 426.0
 offset_bottom = 924.0
-texture_normal = ExtResource("12_cesvc")
+texture_normal = ExtResource("15_rvjov")
 ignore_texture_size = true
 stretch_mode = 6
 
@@ -155,18 +157,19 @@ offset_left = 324.0
 offset_top = 874.0
 offset_right = 369.0
 offset_bottom = 922.0
-texture_normal = ExtResource("13_cni4d")
+texture_normal = ExtResource("16_mxiq0")
 ignore_texture_size = true
 stretch_mode = 6
 
 [node name="Node2D" type="Node2D" parent="Node2D/UI/HUD" unique_id=1260415887]
 
 [node name="Label_Vidas" type="Label" parent="Node2D/UI/HUD/Node2D" unique_id=1840037079]
-offset_left = 121.0
-offset_top = 870.0
-offset_right = 316.0
-offset_bottom = 916.0
-theme_override_fonts/font = ExtResource("15_b8x0y")
+offset_left = 102.0
+offset_top = 862.0
+offset_right = 297.0
+offset_bottom = 908.0
+theme_override_colors/font_color = Color(0.95092666, 0.98, 0.107800014, 1)
+theme_override_fonts/font = ExtResource("14_6orcm")
 theme_override_font_sizes/font_size = 38
 text = "lives: 3"
 horizontal_alignment = 1
@@ -184,17 +187,18 @@ offset_left = 19.0
 offset_top = 45.0
 offset_right = 71.0
 offset_bottom = 102.0
-texture = ExtResource("14_6l187")
+texture = ExtResource("17_mpypr")
 expand_mode = 1
 stretch_mode = 6
 
 [node name="Manzana_ON2" type="TextureRect" parent="Node2D/UI/FrutasUI2/FrutasUI" unique_id=1002201195]
+visible = false
 modulate = Color(1.0662901, 1.0662901, 1.0662901, 1)
 offset_left = 19.0
 offset_top = 45.0
 offset_right = 71.0
 offset_bottom = 102.0
-texture = ExtResource("14_6l187")
+texture = ExtResource("17_mpypr")
 expand_mode = 1
 stretch_mode = 6
 
@@ -204,16 +208,17 @@ offset_left = 68.0
 offset_top = 47.0
 offset_right = 120.0
 offset_bottom = 104.0
-texture = ExtResource("15_cwq5u")
+texture = ExtResource("18_36bym")
 expand_mode = 1
 stretch_mode = 6
 
 [node name="Platano_ON3" type="TextureRect" parent="Node2D/UI/FrutasUI2/FrutasUI" unique_id=1797898459]
+visible = false
 offset_left = 68.0
 offset_top = 47.0
 offset_right = 120.0
 offset_bottom = 104.0
-texture = ExtResource("15_cwq5u")
+texture = ExtResource("18_36bym")
 expand_mode = 1
 stretch_mode = 6
 
@@ -223,20 +228,22 @@ offset_left = 122.0
 offset_top = 48.0
 offset_right = 174.0
 offset_bottom = 105.0
-texture = ExtResource("16_b8x0y")
+texture = ExtResource("19_0flud")
 expand_mode = 1
 stretch_mode = 6
 
 [node name="Fresa_ON4" type="TextureRect" parent="Node2D/UI/FrutasUI2/FrutasUI" unique_id=1292434280]
+visible = false
 offset_left = 122.0
 offset_top = 48.0
 offset_right = 174.0
 offset_bottom = 105.0
-texture = ExtResource("16_b8x0y")
+texture = ExtResource("19_0flud")
 expand_mode = 1
 stretch_mode = 6
 
 [node name="Feedback" type="Control" parent="Node2D/UI" unique_id=544699967]
+visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
@@ -250,7 +257,7 @@ offset_right = 260.0
 offset_bottom = 675.0
 size_flags_horizontal = 0
 theme_override_colors/font_color = Color(1, 1, 0, 1)
-theme_override_fonts/font = ExtResource("15_b8x0y")
+theme_override_fonts/font = ExtResource("14_6orcm")
 theme_override_font_sizes/font_size = 35
 text = "JUMP!"
 horizontal_alignment = 1
@@ -262,7 +269,7 @@ offset_left = 86.0
 offset_top = 616.0
 offset_right = 134.0
 offset_bottom = 655.0
-theme_override_fonts/font = ExtResource("15_b8x0y")
+theme_override_fonts/font = ExtResource("14_6orcm")
 theme_override_font_sizes/font_size = 31
 text = "+10"
 
@@ -274,7 +281,7 @@ offset_top = 299.0
 offset_right = 292.0
 offset_bottom = 362.0
 theme_override_colors/font_color = Color(0.95550007, 1, 0.110000014, 1)
-theme_override_fonts/font = ExtResource("15_b8x0y")
+theme_override_fonts/font = ExtResource("14_6orcm")
 theme_override_font_sizes/font_size = 45
 text = "+2000"
 horizontal_alignment = 1
@@ -288,7 +295,7 @@ offset_top = 445.0
 offset_right = 242.0
 offset_bottom = 536.0
 theme_override_colors/font_color = Color(1, 1, 0.023529412, 1)
-theme_override_fonts/font = ExtResource("15_b8x0y")
+theme_override_fonts/font = ExtResource("14_6orcm")
 theme_override_font_sizes/font_size = 31
 text = "+500
 "
@@ -310,7 +317,7 @@ offset_top = 262.0
 offset_right = 283.0
 offset_bottom = 339.0
 theme_override_colors/font_color = Color(1, 1, 0.047058824, 1)
-theme_override_fonts/font = ExtResource("15_b8x0y")
+theme_override_fonts/font = ExtResource("14_6orcm")
 theme_override_font_sizes/font_size = 55
 text = "¡GANASTE!"
 horizontal_alignment = 1
@@ -319,5 +326,7 @@ vertical_alignment = 1
 [node name="Piso" type="StaticBody2D" parent="." unique_id=35954601]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Piso" unique_id=223773392]
-position = Vector2(219, 750)
+show_behind_parent = true
+z_index = 100
+position = Vector2(215, 719)
 shape = SubResource("RectangleShape2D_jun7q")
