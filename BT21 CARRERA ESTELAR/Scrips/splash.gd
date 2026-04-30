@@ -1,39 +1,41 @@
 extends Control
 
-# Ruta de la escena del menú
-# Cambia esta línea:
-@export var escena_menu = "res://BT21 CARRERA ESTELAR/Scenes/MenuBts.tscn"
+# --- CONFIGURACIÓN ---
+# Ruta de la escena a la que iremos automáticamente
+@export var escena_al_finalizar = "res://BT21 CARRERA ESTELAR/Scenes/MenuBts.tscn"
+# Tiempo en segundos que durará la pantalla de carga
+@export var tiempo_de_carga = 3.0 
 
-# Referencia al nodo del logo (TextureRect2)
-@onready var logo = $TextureRect2 
-
-var posicion_final_y: float 
+# --- REFERENCIAS ---
+# Referencia al texto o logo que va a parpadear (tu nodo Label)
+@onready var texto_cargando = $vistainicio/Label
 
 func _ready():
-	# 1. Guardamos la posición donde pusiste el logo en el editor (la meta)
-	posicion_final_y = logo.position.y
+	# 1. Iniciamos el efecto de parpadeo (latido)
+	iniciar_efecto_latido()
 	
-	# 2. Movemos el logo ARRIBA, fuera de la pantalla.
-	# Usamos el tamaño del logo en negativo para que se oculte por completo.
-	logo.position.y = -logo.size.y - 100 
-	
-	# 3. Iniciamos la caída
-	iniciar_animacion_caida()
-	
-	# 4. Conectamos el Timer para cambiar de escena
-	$Timer.timeout.connect(_on_timer_timeout)
+	# 2. Creamos un temporizador rápido por código para el cambio de escena.
+	# Así no dependemos obligatoriamente de tener el nodo Timer en la escena.
+	get_tree().create_timer(tiempo_de_carga).timeout.connect(_on_tiempo_finalizado)
 
-func iniciar_animacion_caida():
-	var tween = create_tween()
-	
-	# Transición hacia la posición final en 1.2 segundos
-	tween.tween_property(logo, "position:y", posicion_final_y, 1.2)
-	
-	# Configuración de suavizado
-	tween.set_ease(Tween.EASE_OUT)
-	
-	# TRANS_BACK le dará un rebote muy tierno al llegar, ideal para BT21
-	tween.set_trans(Tween.TRANS_BACK) 
+func iniciar_efecto_latido():
+	# Verificamos que el nodo exista para evitar errores
+	if not texto_cargando:
+		push_error("¡Ojo! No se encuentra el nodo 'Label' en '$vistainicio/Label'")
+		return
 
-func _on_timer_timeout():
-	get_tree().change_scene_to_file(escena_menu)
+	# Creamos un Tween que se repite infinitamente
+	var tween_latido = create_tween().set_loops()
+	
+	# -- PASO A (Desvanecer) --
+	# Baja la opacidad (Modulate.a) a 0.2 (casi transparente) en 0.8 segundos
+	tween_latido.tween_property(texto_cargando, "modulate:a", 0.2, 0.8).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
+	
+	# -- PASO B (Aparecer) --
+	# Sube la opacidad de vuelta a 1.0 (totalmente visible) en 0.8 segundos
+	tween_latido.tween_property(texto_cargando, "modulate:a", 1.0, 0.8).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
+
+func _on_tiempo_finalizado():
+	# Esta función se ejecuta automáticamente cuando pasan los 3 segundos
+	print("Carga finalizada. Cambiando al menú...")
+	get_tree().change_scene_to_file(escena_al_finalizar)

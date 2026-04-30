@@ -4,15 +4,16 @@
 [ext_resource type="Texture2D" uid="uid://f4qx3g123q5c" path="res://BT21 CARRERA ESTELAR/Art/Fondos/vista (2).png" id="2_mq4w1"]
 [ext_resource type="PackedScene" uid="uid://c55d6xi3gea3l" path="res://BT21 CARRERA ESTELAR/Prefabs/player_koya.tscn" id="4_5yq3u"]
 [ext_resource type="Texture2D" uid="uid://don1dtwlu7xkv" path="res://BT21 CARRERA ESTELAR/Art/UI/b_back.png" id="4_apf5n"]
-[ext_resource type="PackedScene" path="res://BT21 CARRERA ESTELAR/Prefabs/Fresa.tscn" id="5_affn5"]
-[ext_resource type="PackedScene" path="res://BT21 CARRERA ESTELAR/Prefabs/manzana.tscn" id="6_bep7h"]
-[ext_resource type="PackedScene" path="res://BT21 CARRERA ESTELAR/Prefabs/platano.tscn" id="7_o7oud"]
-[ext_resource type="PackedScene" path="res://BT21 CARRERA ESTELAR/Prefabs/caja.tscn" id="8_cesvc"]
-[ext_resource type="PackedScene" path="res://BT21 CARRERA ESTELAR/Prefabs/cesta.tscn" id="8_cwq5u"]
-[ext_resource type="PackedScene" path="res://BT21 CARRERA ESTELAR/Prefabs/lodo.tscn" id="9_cni4d"]
-[ext_resource type="PackedScene" path="res://BT21 CARRERA ESTELAR/Prefabs/dorada.tscn" id="10_affn5"]
+[ext_resource type="Script" uid="uid://f51lacj8a0u4" path="res://BT21 CARRERA ESTELAR/Scrips/player_movement.gd" id="4_jun7q"]
+[ext_resource type="PackedScene" uid="uid://b5hibdd5j7g1v" path="res://BT21 CARRERA ESTELAR/Prefabs/Fresa.tscn" id="5_affn5"]
+[ext_resource type="PackedScene" uid="uid://bcf30do13yt32" path="res://BT21 CARRERA ESTELAR/Prefabs/manzana.tscn" id="6_bep7h"]
+[ext_resource type="PackedScene" uid="uid://cst8mai2p8yjw" path="res://BT21 CARRERA ESTELAR/Prefabs/platano.tscn" id="7_o7oud"]
+[ext_resource type="PackedScene" uid="uid://bk4rj6a6p7gex" path="res://BT21 CARRERA ESTELAR/Prefabs/caja.tscn" id="8_cesvc"]
+[ext_resource type="PackedScene" uid="uid://prscsutarq14" path="res://BT21 CARRERA ESTELAR/Prefabs/cesta.tscn" id="8_cwq5u"]
+[ext_resource type="PackedScene" uid="uid://dqptxoctp2ldj" path="res://BT21 CARRERA ESTELAR/Prefabs/lodo.tscn" id="9_cni4d"]
+[ext_resource type="PackedScene" uid="uid://c0qsi8543wml1" path="res://BT21 CARRERA ESTELAR/Prefabs/dorada.tscn" id="10_affn5"]
 [ext_resource type="Texture2D" uid="uid://d31ep537l6vlt" path="res://BT21 CARRERA ESTELAR/Art/UI/bla.png" id="11_bep7h"]
-[ext_resource type="PackedScene" path="res://BT21 CARRERA ESTELAR/Prefabs/estrella.tscn" id="11_cwq5u"]
+[ext_resource type="PackedScene" uid="uid://dh0dhhsbhivi2" path="res://BT21 CARRERA ESTELAR/Prefabs/estrella.tscn" id="11_cwq5u"]
 [ext_resource type="Texture2D" uid="uid://bp3wlqk60ojlt" path="res://BT21 CARRERA ESTELAR/Art/UI/pausa.png" id="12_cesvc"]
 [ext_resource type="Texture2D" uid="uid://603hw4m7ohik" path="res://BT21 CARRERA ESTELAR/Art/UI/play.png" id="13_cni4d"]
 [ext_resource type="Texture2D" uid="uid://koikdbluhbxb" path="res://BT21 CARRERA ESTELAR/Art/UI/m_puntaje.png" id="14_6l187"]
@@ -27,6 +28,7 @@ size = Vector2(20.849817, 14.331453)
 size = Vector2(422, 225)
 
 [node name="Level1" type="Control" unique_id=1590379079]
+process_mode = 3
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_5kyf0")
@@ -56,6 +58,7 @@ stretch_mode = 0
 [node name="Jugador" type="CharacterBody2D" parent="." unique_id=383807526]
 position = Vector2(72.99999, 775)
 scale = Vector2(4.605732, 15.490404)
+script = ExtResource("4_jun7q")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Jugador" unique_id=226933266]
 position = Vector2(-0.6544733, -3.8088112)
@@ -186,7 +189,6 @@ expand_mode = 1
 stretch_mode = 6
 
 [node name="Manzana_ON2" type="TextureRect" parent="Node2D/UI/FrutasUI2/FrutasUI" unique_id=1002201195]
-visible = false
 modulate = Color(1.0662901, 1.0662901, 1.0662901, 1)
 offset_left = 19.0
 offset_top = 45.0
@@ -207,7 +209,6 @@ expand_mode = 1
 stretch_mode = 6
 
 [node name="Platano_ON3" type="TextureRect" parent="Node2D/UI/FrutasUI2/FrutasUI" unique_id=1797898459]
-visible = false
 offset_left = 68.0
 offset_top = 47.0
 offset_right = 120.0
@@ -227,7 +228,6 @@ expand_mode = 1
 stretch_mode = 6
 
 [node name="Fresa_ON4" type="TextureRect" parent="Node2D/UI/FrutasUI2/FrutasUI" unique_id=1292434280]
-visible = false
 offset_left = 122.0
 offset_top = 48.0
 offset_right = 174.0

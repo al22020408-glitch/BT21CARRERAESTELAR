@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://ddf6qtf6cs7hf"]
 
 [ext_resource type="Texture2D" uid="uid://pcvkl3db647v" path="res://BT21 CARRERA ESTELAR/Art/Fondos/vista.png" id="1_aoj68"]
+[ext_resource type="Script" uid="uid://ytcvximq2o4n" path="res://BT21 CARRERA ESTELAR/Scrips/creditos.gd" id="1_d6k0f"]
 [ext_resource type="Texture2D" uid="uid://don1dtwlu7xkv" path="res://BT21 CARRERA ESTELAR/Art/UI/b_back.png" id="2_2ocov"]
 [ext_resource type="FontFile" uid="uid://t0a1hdoyeac4" path="res://BT21 CARRERA ESTELAR/Art/UI/Larceny.ttf" id="3_6yrcq"]
 [ext_resource type="Texture2D" uid="uid://brmqe02gu66tl" path="res://BT21 CARRERA ESTELAR/Art/UI/mari.png" id="4_d6k0f"]
@@ -11,6 +12,7 @@
 [node name="Creditos" type="Control" unique_id=241467253]
 layout_mode = 3
 anchors_preset = 0
+script = ExtResource("1_d6k0f")
 
 [node name="fondo" type="TextureRect" parent="." unique_id=705450868]
 layout_mode = 0
@@ -18,16 +20,6 @@ offset_right = 429.0
 offset_bottom = 936.0
 texture = ExtResource("1_aoj68")
 expand_mode = 1
-stretch_mode = 6
-
-[node name="Boton_back" type="TextureButton" parent="." unique_id=759800597]
-layout_mode = 0
-offset_left = 1.0000019
-offset_top = 7.0000153
-offset_right = 1620.0
-offset_bottom = 663.0
-scale = Vector2(0.07102873, 0.09121393)
-texture_normal = ExtResource("2_2ocov")
 stretch_mode = 6
 
 [node name="contenido" type="Node2D" parent="." unique_id=2050980626]
@@ -142,3 +134,14 @@ text = "ISC ARISTIDES
 CALDERÓN TREJO
 MENTORÍA Y ASESORÍA"
 vertical_alignment = 1
+
+[node name="botonBack" type="TextureButton" parent="." unique_id=347861703]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 32.0
+offset_right = 174.0
+offset_bottom = 138.0
+pivot_offset = Vector2(50, 25)
+texture_normal = ExtResource("2_2ocov")
+ignore_texture_size = true
+stretch_mode = 5
