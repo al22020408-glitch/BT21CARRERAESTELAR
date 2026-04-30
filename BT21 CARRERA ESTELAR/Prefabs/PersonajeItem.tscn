@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cqbowjtdi3vtw"]
+
+[ext_resource type="Texture2D" uid="uid://b2r2kr1nnsyrd" path="res://BT21 CARRERA ESTELAR/Art/UI/cuadicula.png" id="1_250ws"]
+
+[node name="PersonajeItem" type="Control" unique_id=1466002406]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="cuadricula" type="TextureRect" parent="." unique_id=425895197]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 170.0
+offset_right = 417.0
+offset_bottom = 738.0
+texture = ExtResource("1_250ws")
+expand_mode = 1
+stretch_mode = 6

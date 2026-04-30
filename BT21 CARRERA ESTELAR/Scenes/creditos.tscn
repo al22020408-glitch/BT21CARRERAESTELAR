@@ -1,0 +1,144 @@
+[gd_scene format=3 uid="uid://ddf6qtf6cs7hf"]
+
+[ext_resource type="Texture2D" uid="uid://pcvkl3db647v" path="res://BT21 CARRERA ESTELAR/Art/Fondos/vista.png" id="1_aoj68"]
+[ext_resource type="Texture2D" uid="uid://don1dtwlu7xkv" path="res://BT21 CARRERA ESTELAR/Art/UI/b_back.png" id="2_2ocov"]
+[ext_resource type="FontFile" uid="uid://t0a1hdoyeac4" path="res://BT21 CARRERA ESTELAR/Art/UI/Larceny.ttf" id="3_6yrcq"]
+[ext_resource type="Texture2D" uid="uid://brmqe02gu66tl" path="res://BT21 CARRERA ESTELAR/Art/UI/mari.png" id="4_d6k0f"]
+[ext_resource type="Texture2D" uid="uid://dfbjb2a5sjcj" path="res://BT21 CARRERA ESTELAR/Art/UI/jacky.png" id="5_g1vly"]
+[ext_resource type="Texture2D" uid="uid://4yfs33pft8b3" path="res://BT21 CARRERA ESTELAR/Art/UI/estela.png" id="6_opoe2"]
+[ext_resource type="Texture2D" uid="uid://cfjjbtdsfh2h2" path="res://BT21 CARRERA ESTELAR/Art/UI/profe.png" id="7_nvik0"]
+
+[node name="Creditos" type="Control" unique_id=241467253]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="fondo" type="TextureRect" parent="." unique_id=705450868]
+layout_mode = 0
+offset_right = 429.0
+offset_bottom = 936.0
+texture = ExtResource("1_aoj68")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Boton_back" type="TextureButton" parent="." unique_id=759800597]
+layout_mode = 0
+offset_left = 1.0000019
+offset_top = 7.0000153
+offset_right = 1620.0
+offset_bottom = 663.0
+scale = Vector2(0.07102873, 0.09121393)
+texture_normal = ExtResource("2_2ocov")
+stretch_mode = 6
+
+[node name="contenido" type="Node2D" parent="." unique_id=2050980626]
+
+[node name="titulo" type="Label" parent="contenido" unique_id=1326793946]
+offset_left = 69.0
+offset_top = 173.0
+offset_right = 355.0
+offset_bottom = 222.0
+theme_override_colors/font_color = Color(1, 1, 0.07058824, 1)
+theme_override_fonts/font = ExtResource("3_6yrcq")
+theme_override_font_sizes/font_size = 53
+text = "EQUIPO DE BT21"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="titulo2" type="Label" parent="contenido" unique_id=1242272479]
+offset_left = 12.0
+offset_top = 635.0
+offset_right = 418.0
+offset_bottom = 732.0
+theme_override_colors/font_color = Color(1, 1, 0.07058824, 1)
+theme_override_fonts/font = ExtResource("3_6yrcq")
+theme_override_font_sizes/font_size = 46
+text = "AGRADECIMIENTOS
+especiales"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="persona1" type="TextureRect" parent="contenido" unique_id=55618299]
+offset_left = 75.0
+offset_top = 275.0
+offset_right = 146.0
+offset_bottom = 352.0
+texture = ExtResource("4_d6k0f")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="persona2" type="TextureRect" parent="contenido" unique_id=1620497412]
+offset_left = 72.0
+offset_top = 395.0
+offset_right = 151.0
+offset_bottom = 476.0
+texture = ExtResource("5_g1vly")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="persona3" type="TextureRect" parent="contenido" unique_id=1515152650]
+offset_left = 71.0
+offset_top = 507.0
+offset_right = 154.0
+offset_bottom = 597.0
+texture = ExtResource("6_opoe2")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="persona4" type="TextureRect" parent="contenido" unique_id=362832866]
+offset_left = 81.0
+offset_top = 757.0
+offset_right = 163.0
+offset_bottom = 851.0
+texture = ExtResource("7_nvik0")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="texto1" type="Label" parent="contenido" unique_id=702015648]
+offset_left = 172.0
+offset_top = 263.0
+offset_right = 424.0
+offset_bottom = 360.0
+theme_override_fonts/font = ExtResource("3_6yrcq")
+theme_override_font_sizes/font_size = 24
+text = "María de Jesús 
+Domínguez 
+Hernández
+DESARROLLO Y PROGRAMACIÓN"
+vertical_alignment = 1
+
+[node name="texto2" type="Label" parent="contenido" unique_id=1071986209]
+offset_left = 174.0
+offset_top = 387.0
+offset_right = 426.0
+offset_bottom = 484.0
+theme_override_fonts/font = ExtResource("3_6yrcq")
+theme_override_font_sizes/font_size = 24
+text = "Alondra 
+Jacqueline
+Ochoa ramos
+MECÁNICAS Y SONIDO"
+vertical_alignment = 1
+
+[node name="texto3" type="Label" parent="contenido" unique_id=120580236]
+offset_left = 170.0
+offset_top = 502.0
+offset_right = 422.0
+offset_bottom = 599.0
+theme_override_fonts/font = ExtResource("3_6yrcq")
+theme_override_font_sizes/font_size = 24
+text = "María Estela 
+Paleo Arcos
+ARTE Y DISEÑO VISUAL"
+vertical_alignment = 1
+
+[node name="texto4" type="Label" parent="contenido" unique_id=1188181650]
+offset_left = 183.0
+offset_top = 748.0
+offset_right = 435.0
+offset_bottom = 845.0
+theme_override_fonts/font = ExtResource("3_6yrcq")
+theme_override_font_sizes/font_size = 24
+text = "ISC ARISTIDES
+CALDERÓN TREJO
+MENTORÍA Y ASESORÍA"
+vertical_alignment = 1
