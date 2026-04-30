@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://b5hibdd5j7g1v"]
+
+[ext_resource type="Texture2D" uid="uid://b5fprk2ppk1sj" path="res://BT21 CARRERA ESTELAR/Art/UI/fresa.png" id="1_bpn55"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6ihif"]
+size = Vector2(48.4375, 42.625)
+
+[node name="Fruta" type="Area2D" unique_id=704562417]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2034299548]
+position = Vector2(197.59373, 463.6875)
+scale = Vector2(0.20713499, 0.15850915)
+texture = ExtResource("1_bpn55")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1636366515]
+position = Vector2(198.78125, 466.3125)
+shape = SubResource("RectangleShape2D_6ihif")

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bk4rj6a6p7gex"]
+
+[ext_resource type="Texture2D" uid="uid://c1fo3vkn5egph" path="res://BT21 CARRERA ESTELAR/Art/UI/caja.png" id="1_n8nnx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jsxi2"]
+size = Vector2(76.75, 77.25)
+
+[node name="Obstaculos" type="Area2D" unique_id=32237068]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=306431680]
+position = Vector2(201.625, 467.375)
+shape = SubResource("RectangleShape2D_jsxi2")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1454935982]
+position = Vector2(203, 468)
+scale = Vector2(0.09920632, 0.11046513)
+texture = ExtResource("1_n8nnx")

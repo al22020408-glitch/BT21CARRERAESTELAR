@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cst8mai2p8yjw"]
+
+[ext_resource type="Texture2D" uid="uid://dogwwt0bgbmfb" path="res://BT21 CARRERA ESTELAR/Art/UI/platano.png" id="1_h1ic8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6ihif"]
+size = Vector2(44.875, 45.25)
+
+[node name="Fruta" type="Area2D" unique_id=704562417]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2034299548]
+position = Vector2(192.95132, 510.8125)
+scale = Vector2(0.1878803, 0.15549687)
+texture = ExtResource("1_h1ic8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1636366515]
+position = Vector2(195, 513)
+shape = SubResource("RectangleShape2D_6ihif")
