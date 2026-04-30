@@ -1,0 +1,247 @@
+[gd_scene format=3 uid="uid://casc6r6f2vjg6"]
+
+[ext_resource type="Texture2D" uid="uid://djgt4ecyyh34t" path="res://BT21 CARRERA ESTELAR/Art/UI/vistanoche.png" id="1_urnw7"]
+[ext_resource type="FontFile" uid="uid://t0a1hdoyeac4" path="res://BT21 CARRERA ESTELAR/Art/UI/Larceny.ttf" id="2_efb6o"]
+[ext_resource type="Texture2D" uid="uid://bfwffbhxp5b5x" path="res://BT21 CARRERA ESTELAR/Art/UI/frutas2.png" id="3_548sn"]
+[ext_resource type="Texture2D" uid="uid://ba7i30kfoc55m" path="res://BT21 CARRERA ESTELAR/Art/UI/vidas.png" id="4_o8w2r"]
+[ext_resource type="Texture2D" uid="uid://b47xvhkacely4" path="res://BT21 CARRERA ESTELAR/Art/UI/corazon.png" id="5_4bqkt"]
+[ext_resource type="Texture2D" uid="uid://cd8xodn1g80gu" path="res://BT21 CARRERA ESTELAR/Art/UI/estrella.png" id="6_ualip"]
+[ext_resource type="Texture2D" uid="uid://dt3qqwe8ipw52" path="res://BT21 CARRERA ESTELAR/Art/UI/b_creditos.png" id="7_kmkjl"]
+[ext_resource type="Texture2D" uid="uid://dqlo3o2k4055x" path="res://BT21 CARRERA ESTELAR/Art/UI/b_salir.png" id="8_7cl5s"]
+[ext_resource type="Texture2D" uid="uid://b3xjsj53vdjm5" path="res://BT21 CARRERA ESTELAR/Art/UI/b_silenciar.png" id="9_hbjjn"]
+
+[node name="WinScreen_tscn" type="Control" unique_id=1407409556]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="fondo" type="TextureRect" parent="." unique_id=736348575]
+layout_mode = 0
+offset_right = 432.0
+offset_bottom = 937.0
+texture = ExtResource("1_urnw7")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="HUD" type="Control" parent="." unique_id=996788463]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label_score" type="Label" parent="HUD" unique_id=600608718]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 44.0
+offset_right = 179.0
+offset_bottom = 81.0
+theme_override_colors/font_color = Color(1, 1, 0.0627451, 1)
+theme_override_fonts/font = ExtResource("2_efb6o")
+theme_override_font_sizes/font_size = 42
+text = "score:"
+
+[node name="fruta" type="TextureRect" parent="HUD" unique_id=18311336]
+layout_mode = 0
+offset_left = 174.0
+offset_top = 18.0
+offset_right = 427.0
+offset_bottom = 105.0
+texture = ExtResource("3_548sn")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="PanelResultado" type="Control" parent="." unique_id=1098444905]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="contenedornivel" type="Control" parent="PanelResultado" unique_id=148014642]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Contador" type="TextureRect" parent="PanelResultado/contenedornivel" unique_id=1722779920]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 246.0
+offset_right = 342.0
+offset_bottom = 455.0
+texture = ExtResource("4_o8w2r")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="level1" type="Label" parent="PanelResultado/contenedornivel/Contador" unique_id=593406920]
+layout_mode = 0
+offset_left = 88.0
+offset_top = 52.0
+offset_right = 147.0
+offset_bottom = 75.0
+theme_override_colors/font_color = Color(0.0142752165, 0.014275218, 0.014275218, 1)
+theme_override_fonts/font = ExtResource("2_efb6o")
+theme_override_font_sizes/font_size = 26
+text = "LEVEL 1"
+horizontal_alignment = 1
+
+[node name="VidasContainer" type="HBoxContainer" parent="PanelResultado" unique_id=323380567]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.5
+anchor_bottom = 0.54800004
+offset_right = 20.0
+offset_bottom = 18.079998
+scale = Vector2(0.067354314, 0.06758883)
+
+[node name="Controlvidas" type="Control" parent="PanelResultado/VidasContainer" unique_id=1551682807]
+layout_mode = 2
+
+[node name="vida1" type="TextureRect" parent="PanelResultado/VidasContainer/Controlvidas" unique_id=497702195]
+layout_mode = 0
+offset_left = 2538.813
+offset_top = 4793.692
+offset_right = 3272.813
+offset_bottom = 5442.692
+scale = Vector2(0.87042564, 0.7653424)
+texture = ExtResource("5_4bqkt")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="vida2" type="TextureRect" parent="PanelResultado/VidasContainer/Controlvidas" unique_id=1681368222]
+layout_mode = 0
+offset_left = 3236.6155
+offset_top = 4808.4873
+offset_right = 3970.6155
+offset_bottom = 5457.4873
+scale = Vector2(0.87042564, 0.7653424)
+texture = ExtResource("5_4bqkt")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="vida3" type="TextureRect" parent="PanelResultado/VidasContainer/Controlvidas" unique_id=248648589]
+layout_mode = 0
+offset_left = 3993.805
+offset_top = 4793.692
+offset_right = 4727.8047
+offset_bottom = 5442.692
+scale = Vector2(0.87042564, 0.7653424)
+texture = ExtResource("5_4bqkt")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="EstrellasContainer2" type="HBoxContainer" parent="PanelResultado" unique_id=403027984]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Controlestrellas" type="Control" parent="PanelResultado/EstrellasContainer2" unique_id=1861090868]
+layout_mode = 2
+
+[node name="estrella1" type="TextureRect" parent="PanelResultado/EstrellasContainer2/Controlestrellas" unique_id=670796001]
+layout_mode = 0
+offset_left = 121.0
+offset_top = 370.0
+offset_right = 154.0
+offset_bottom = 421.0
+texture = ExtResource("6_ualip")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="estrella2" type="TextureRect" parent="PanelResultado/EstrellasContainer2/Controlestrellas" unique_id=1886491992]
+layout_mode = 0
+offset_left = 159.0
+offset_top = 370.0
+offset_right = 192.0
+offset_bottom = 421.0
+texture = ExtResource("6_ualip")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="estrella3" type="TextureRect" parent="PanelResultado/EstrellasContainer2/Controlestrellas" unique_id=1227408550]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 370.0
+offset_right = 233.0
+offset_bottom = 421.0
+texture = ExtResource("6_ualip")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="estrella4" type="TextureRect" parent="PanelResultado/EstrellasContainer2/Controlestrellas" unique_id=810996233]
+layout_mode = 0
+offset_left = 241.0
+offset_top = 370.0
+offset_right = 274.0
+offset_bottom = 421.0
+texture = ExtResource("6_ualip")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="estrella5" type="TextureRect" parent="PanelResultado/EstrellasContainer2/Controlestrellas" unique_id=1934803060]
+layout_mode = 0
+offset_left = 281.0
+offset_top = 370.0
+offset_right = 314.0
+offset_bottom = 421.0
+texture = ExtResource("6_ualip")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Label_Grande" type="Label" parent="." unique_id=1814201292]
+layout_mode = 0
+offset_left = -235.0
+offset_top = 448.0
+offset_right = 753.0
+offset_bottom = 569.0
+theme_override_colors/font_color = Color(1, 1, 0.019607844, 1)
+theme_override_fonts/font = ExtResource("2_efb6o")
+theme_override_font_sizes/font_size = 138
+text = "¡NIVEL DESBLOQUEADO !"
+horizontal_alignment = 1
+
+[node name="BotonesContainer" type="VBoxContainer" parent="." unique_id=752050559]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Control" type="Control" parent="BotonesContainer" unique_id=1542740300]
+layout_mode = 2
+
+[node name="BotonCreditos" type="TextureButton" parent="BotonesContainer/Control" unique_id=1468987018]
+layout_mode = 0
+offset_left = 93.0
+offset_top = 584.0
+offset_right = 1712.0
+offset_bottom = 1240.0
+scale = Vector2(0.13359404, 0.124209546)
+texture_normal = ExtResource("7_kmkjl")
+stretch_mode = 6
+
+[node name="BotonSalir" type="TextureButton" parent="BotonesContainer/Control" unique_id=116887084]
+layout_mode = 0
+offset_left = 103.00001
+offset_top = 651.0
+offset_right = 1757.2656
+offset_bottom = 1307.0
+scale = Vector2(0.13359404, 0.124209546)
+texture_normal = ExtResource("8_7cl5s")
+stretch_mode = 6
+
+[node name="BotonSilenciar" type="TextureButton" parent="BotonesContainer/Control" unique_id=1310866816]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 724.00006
+offset_right = 1714.0
+offset_bottom = 1384.1748
+scale = Vector2(0.13119927, 0.11718652)
+texture_normal = ExtResource("9_hbjjn")
+stretch_mode = 6
+
+[node name="vidas" type="Label" parent="." unique_id=1782988191]
+layout_mode = 0
+offset_left = 141.0
+offset_top = 841.0
+offset_right = 284.0
+offset_bottom = 878.0
+theme_override_colors/font_color = Color(0.9843137, 0.99215686, 0.09411765, 1)
+theme_override_fonts/font = ExtResource("2_efb6o")
+theme_override_font_sizes/font_size = 41
+text = "lives: 3"
+horizontal_alignment = 1
+vertical_alignment = 1

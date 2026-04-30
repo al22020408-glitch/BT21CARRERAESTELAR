@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dtof3r10o1dby"]
 
 [ext_resource type="Script" uid="uid://d2o8x83va88uw" path="res://BT21 CARRERA ESTELAR/Scrips/menu_bts.gd" id="1_ouxen"]
-[ext_resource type="Texture2D" uid="uid://f4qx3g123q5c" path="res://BT21 CARRERA ESTELAR/Art/Fondos/vista (2).png" id="2_ouxen"]
+[ext_resource type="Texture2D" uid="uid://pcvkl3db647v" path="res://BT21 CARRERA ESTELAR/Art/Fondos/vista.png" id="2_ouxen"]
 [ext_resource type="Texture2D" uid="uid://bfwffbhxp5b5x" path="res://BT21 CARRERA ESTELAR/Art/UI/frutas2.png" id="3_jbt3e"]
 [ext_resource type="Texture2D" uid="uid://ba7i30kfoc55m" path="res://BT21 CARRERA ESTELAR/Art/UI/vidas.png" id="4_lxo80"]
 [ext_resource type="FontFile" uid="uid://t0a1hdoyeac4" path="res://BT21 CARRERA ESTELAR/Art/UI/Larceny.ttf" id="5_g84ko"]
@@ -25,15 +25,15 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 2.0
-offset_top = -2.0
-offset_right = 2.0
-offset_bottom = 2.0
+offset_left = -4.0
+offset_top = 4.0
+offset_right = -2.0
+offset_bottom = 3.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_ouxen")
 expand_mode = 1
-stretch_mode = 5
+stretch_mode = 6
 
 [node name="Frutas" type="TextureRect" parent="TextureRect" unique_id=1771544667]
 layout_mode = 0
@@ -48,10 +48,10 @@ expand_mode = 1
 [node name="Vidas" type="TextureRect" parent="TextureRect" unique_id=1794328737]
 clip_contents = true
 layout_mode = 0
-offset_left = 67.0
-offset_top = 198.00002
-offset_right = 399.0
-offset_bottom = 696.0
+offset_left = 64.0
+offset_top = 200.00002
+offset_right = 396.0
+offset_bottom = 698.0
 scale = Vector2(0.8800008, 0.3999986)
 texture = ExtResource("4_lxo80")
 expand_mode = 1

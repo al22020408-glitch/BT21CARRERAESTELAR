@@ -221,8 +221,8 @@ metadata/_edit_horizontal_guides_ = [2057.0]
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1874718091]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1079421082]
-position = Vector2(-1, 0)
-scale = Vector2(0.19468191, 0.19166666)
+position = Vector2(-4.1324806, -2.4895828)
+scale = Vector2(0.14496, 0.15183333)
 sprite_frames = SubResource("SpriteFrames_dtot6")
 animation = &"run"
 frame_progress = 0.43603057

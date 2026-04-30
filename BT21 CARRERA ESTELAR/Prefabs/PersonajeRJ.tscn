@@ -1,0 +1,418 @@
+[gd_scene format=3 uid="uid://rqq0bdo5547p"]
+
+[ext_resource type="Texture2D" uid="uid://b2r2kr1nnsyrd" path="res://BT21 CARRERA ESTELAR/Art/UI/cuadicula.png" id="1_g6ldq"]
+[ext_resource type="Texture2D" uid="uid://crjhxe5o2jru0" path="res://BT21 CARRERA ESTELAR/Art/UI/koya.png" id="2_al6m8"]
+[ext_resource type="Texture2D" uid="uid://d1ie40csf3dec" path="res://BT21 CARRERA ESTELAR/Art/UI/Rj.png" id="3_7p763"]
+[ext_resource type="Texture2D" uid="uid://ccdftcwvc5jda" path="res://BT21 CARRERA ESTELAR/Art/UI/Shooky.png" id="4_trma8"]
+[ext_resource type="Texture2D" uid="uid://dkrpcxh4ucqdm" path="res://BT21 CARRERA ESTELAR/Art/UI/Mang.png" id="5_txhag"]
+[ext_resource type="Texture2D" uid="uid://bbgmevvybnaeq" path="res://BT21 CARRERA ESTELAR/Art/UI/Chimmy.png" id="6_b16ba"]
+[ext_resource type="Texture2D" uid="uid://cauv8m4ocvhx1" path="res://BT21 CARRERA ESTELAR/Art/UI/Tata.png" id="7_fo4xj"]
+[ext_resource type="Texture2D" uid="uid://baohx4ldn7a0p" path="res://BT21 CARRERA ESTELAR/Art/UI/Koky.png" id="8_bpj0c"]
+[ext_resource type="Texture2D" uid="uid://c6p22cdr7qksx" path="res://BT21 CARRERA ESTELAR/Art/UI/Van.png" id="9_x0hy1"]
+[ext_resource type="Texture2D" uid="uid://mruanonridvs" path="res://BT21 CARRERA ESTELAR/Art/UI/secreto.png" id="10_k0l4d"]
+[ext_resource type="FontFile" uid="uid://t0a1hdoyeac4" path="res://BT21 CARRERA ESTELAR/Art/UI/Larceny.ttf" id="11_h0mir"]
+
+[node name="PersonajeItem" type="Control" unique_id=1466002406]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="cuadricula" type="TextureRect" parent="." unique_id=425895197]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 170.0
+offset_right = 417.0
+offset_bottom = 738.0
+texture = ExtResource("1_g6ldq")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Sprite" type="TextureRect" parent="." unique_id=1971338220]
+layout_mode = 0
+offset_left = 51.0
+offset_top = 202.0
+offset_right = 147.0
+offset_bottom = 338.0
+texture = ExtResource("2_al6m8")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Sprite2" type="TextureRect" parent="." unique_id=1138750732]
+layout_mode = 0
+offset_left = 173.0
+offset_top = 206.0
+offset_right = 256.0
+offset_bottom = 331.0
+texture = ExtResource("3_7p763")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Sprite3" type="TextureRect" parent="." unique_id=1707047016]
+layout_mode = 0
+offset_left = 292.0
+offset_top = 224.0
+offset_right = 385.0
+offset_bottom = 321.0
+texture = ExtResource("4_trma8")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Sprite4" type="TextureRect" parent="." unique_id=650781213]
+visible = false
+layout_mode = 0
+offset_left = 50.0
+offset_top = 402.0
+offset_right = 147.0
+offset_bottom = 514.0
+texture = ExtResource("5_txhag")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Sprite5" type="TextureRect" parent="." unique_id=397017752]
+visible = false
+layout_mode = 0
+offset_left = 170.0
+offset_top = 386.0
+offset_right = 267.0
+offset_bottom = 507.0
+texture = ExtResource("6_b16ba")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Sprite6" type="TextureRect" parent="." unique_id=282128499]
+visible = false
+layout_mode = 0
+offset_left = 288.0
+offset_top = 390.0
+offset_right = 385.0
+offset_bottom = 511.0
+texture = ExtResource("7_fo4xj")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Sprite7" type="TextureRect" parent="." unique_id=672851110]
+visible = false
+layout_mode = 0
+offset_left = 54.0
+offset_top = 571.0
+offset_right = 166.0
+offset_bottom = 702.0
+texture = ExtResource("8_bpj0c")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Sprite8" type="TextureRect" parent="." unique_id=1521034825]
+visible = false
+layout_mode = 0
+offset_left = 174.0
+offset_top = 578.0
+offset_right = 263.0
+offset_bottom = 692.0
+texture = ExtResource("9_x0hy1")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Sprite9" type="TextureRect" parent="." unique_id=1807796338]
+layout_mode = 0
+offset_left = 297.0
+offset_top = 591.0
+offset_right = 377.0
+offset_bottom = 677.0
+texture = ExtResource("10_k0l4d")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="num1" type="Label" parent="." unique_id=68547752]
+layout_mode = 0
+offset_left = 73.0
+offset_top = 205.0
+offset_right = 122.0
+offset_bottom = 231.0
+theme_override_colors/font_color = Color(0.017020682, 0.017020678, 0.017020678, 1)
+theme_override_fonts/font = ExtResource("11_h0mir")
+theme_override_font_sizes/font_size = 28
+text = "N.1
+"
+horizontal_alignment = 1
+
+[node name="num2" type="Label" parent="." unique_id=875061110]
+layout_mode = 0
+offset_left = 193.0
+offset_top = 204.0
+offset_right = 242.0
+offset_bottom = 259.0
+theme_override_colors/font_color = Color(0.017020682, 0.017020678, 0.017020678, 1)
+theme_override_fonts/font = ExtResource("11_h0mir")
+theme_override_font_sizes/font_size = 28
+text = "N.1
+
+
+"
+horizontal_alignment = 1
+
+[node name="num3" type="Label" parent="." unique_id=1756543359]
+layout_mode = 0
+offset_left = 312.0
+offset_top = 209.0
+offset_right = 361.0
+offset_bottom = 322.0
+theme_override_colors/font_color = Color(0.017020682, 0.017020678, 0.017020678, 1)
+theme_override_fonts/font = ExtResource("11_h0mir")
+theme_override_font_sizes/font_size = 28
+text = "N.1
+
+"
+horizontal_alignment = 1
+
+[node name="num4" type="Label" parent="." unique_id=95564364]
+layout_mode = 0
+offset_left = 70.0
+offset_top = 384.0
+offset_right = 119.0
+offset_bottom = 497.0
+theme_override_colors/font_color = Color(0.017020682, 0.017020678, 0.017020678, 1)
+theme_override_fonts/font = ExtResource("11_h0mir")
+theme_override_font_sizes/font_size = 28
+text = "N.2
+
+
+"
+horizontal_alignment = 1
+
+[node name="num5" type="Label" parent="." unique_id=1489959745]
+layout_mode = 0
+offset_left = 191.0
+offset_top = 384.0
+offset_right = 240.0
+offset_bottom = 497.0
+theme_override_colors/font_color = Color(0.017020682, 0.017020678, 0.017020678, 1)
+theme_override_fonts/font = ExtResource("11_h0mir")
+theme_override_font_sizes/font_size = 28
+text = "N.2
+
+
+
+"
+horizontal_alignment = 1
+
+[node name="num6" type="Label" parent="." unique_id=1396911818]
+layout_mode = 0
+offset_left = 313.0
+offset_top = 385.0
+offset_right = 362.0
+offset_bottom = 527.0
+theme_override_colors/font_color = Color(0.017020682, 0.017020678, 0.017020678, 1)
+theme_override_fonts/font = ExtResource("11_h0mir")
+theme_override_font_sizes/font_size = 28
+text = "N.2
+
+
+
+"
+horizontal_alignment = 1
+
+[node name="num7" type="Label" parent="." unique_id=418391569]
+layout_mode = 0
+offset_left = 71.0
+offset_top = 558.0
+offset_right = 120.0
+offset_bottom = 729.0
+theme_override_colors/font_color = Color(0.017020682, 0.017020678, 0.017020678, 1)
+theme_override_fonts/font = ExtResource("11_h0mir")
+theme_override_font_sizes/font_size = 28
+text = "N.3
+
+
+
+
+"
+horizontal_alignment = 1
+
+[node name="num8" type="Label" parent="." unique_id=641969406]
+layout_mode = 0
+offset_left = 191.0
+offset_top = 558.0
+offset_right = 240.0
+offset_bottom = 758.0
+theme_override_colors/font_color = Color(0.017020682, 0.017020678, 0.017020678, 1)
+theme_override_fonts/font = ExtResource("11_h0mir")
+theme_override_font_sizes/font_size = 28
+text = "N.3
+
+
+
+
+
+"
+horizontal_alignment = 1
+
+[node name="num9" type="Label" parent="." unique_id=575316328]
+layout_mode = 0
+offset_left = 313.0
+offset_top = 559.0
+offset_right = 362.0
+offset_bottom = 759.0
+theme_override_colors/font_color = Color(0.017020682, 0.017020678, 0.017020678, 1)
+theme_override_fonts/font = ExtResource("11_h0mir")
+theme_override_font_sizes/font_size = 28
+text = "N.3
+
+
+
+
+
+"
+horizontal_alignment = 1
+
+[node name="nombre" type="Label" parent="." unique_id=787905712]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 335.0
+offset_right = 118.0
+offset_bottom = 358.0
+theme_override_colors/font_color = Color(0.06469653, 0.06469653, 0.06469653, 1)
+theme_override_fonts/font = ExtResource("11_h0mir")
+theme_override_font_sizes/font_size = 23
+text = "Koya"
+
+[node name="nombre2" type="Label" parent="." unique_id=185329612]
+layout_mode = 0
+offset_left = 199.0
+offset_top = 334.0
+offset_right = 239.0
+offset_bottom = 357.0
+theme_override_colors/font_color = Color(0.06469653, 0.06469653, 0.06469653, 1)
+theme_override_fonts/font = ExtResource("11_h0mir")
+theme_override_font_sizes/font_size = 23
+text = "RJ"
+horizontal_alignment = 1
+
+[node name="nombre3" type="Label" parent="." unique_id=371013956]
+layout_mode = 0
+offset_left = 312.0
+offset_top = 336.0
+offset_right = 364.0
+offset_bottom = 359.0
+theme_override_colors/font_color = Color(0.06469653, 0.06469653, 0.06469653, 1)
+theme_override_fonts/font = ExtResource("11_h0mir")
+theme_override_font_sizes/font_size = 23
+text = "Shooky"
+horizontal_alignment = 1
+
+[node name="nombre4" type="Label" parent="." unique_id=548544492]
+layout_mode = 0
+offset_left = 77.0
+offset_top = 513.0
+offset_right = 117.0
+offset_bottom = 536.0
+theme_override_colors/font_color = Color(0.06469653, 0.06469653, 0.06469653, 1)
+theme_override_fonts/font = ExtResource("11_h0mir")
+theme_override_font_sizes/font_size = 23
+text = "Mang"
+
+[node name="nombre5" type="Label" parent="." unique_id=1227909617]
+layout_mode = 0
+offset_left = 187.0
+offset_top = 514.0
+offset_right = 243.0
+offset_bottom = 537.0
+theme_override_colors/font_color = Color(0.06469653, 0.06469653, 0.06469653, 1)
+theme_override_fonts/font = ExtResource("11_h0mir")
+theme_override_font_sizes/font_size = 23
+text = "Chimmy"
+horizontal_alignment = 1
+
+[node name="nombre6" type="Label" parent="." unique_id=1140228544]
+layout_mode = 0
+offset_left = 321.0
+offset_top = 517.0
+offset_right = 361.0
+offset_bottom = 540.0
+theme_override_colors/font_color = Color(0.06469653, 0.06469653, 0.06469653, 1)
+theme_override_fonts/font = ExtResource("11_h0mir")
+theme_override_font_sizes/font_size = 23
+text = "TaTa"
+horizontal_alignment = 1
+
+[node name="nombre7" type="Label" parent="." unique_id=1371057244]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 694.0
+offset_right = 118.0
+offset_bottom = 717.0
+theme_override_colors/font_color = Color(0.06469653, 0.06469653, 0.06469653, 1)
+theme_override_fonts/font = ExtResource("11_h0mir")
+theme_override_font_sizes/font_size = 23
+text = "KOKY"
+
+[node name="nombre8" type="Label" parent="." unique_id=101588934]
+layout_mode = 0
+offset_left = 195.0
+offset_top = 694.0
+offset_right = 235.0
+offset_bottom = 717.0
+theme_override_colors/font_color = Color(0.06469653, 0.06469653, 0.06469653, 1)
+theme_override_fonts/font = ExtResource("11_h0mir")
+theme_override_font_sizes/font_size = 23
+text = "Van"
+horizontal_alignment = 1
+
+[node name="nombre9" type="Label" parent="." unique_id=1184770011]
+layout_mode = 0
+offset_left = 297.0
+offset_top = 696.0
+offset_right = 381.0
+offset_bottom = 719.0
+theme_override_colors/font_color = Color(0.007843138, 0.007843138, 0, 1)
+theme_override_fonts/font = ExtResource("11_h0mir")
+theme_override_font_sizes/font_size = 17
+text = "Proximamente"
+
+[node name="lock" type="TextureRect" parent="." unique_id=1463101984]
+layout_mode = 0
+offset_left = 54.0
+offset_top = 408.0
+offset_right = 138.0
+offset_bottom = 497.0
+texture = ExtResource("10_k0l4d")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="lock1" type="TextureRect" parent="." unique_id=910604047]
+layout_mode = 0
+offset_left = 174.0
+offset_top = 591.0
+offset_right = 258.0
+offset_bottom = 680.0
+texture = ExtResource("10_k0l4d")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="lock2" type="TextureRect" parent="." unique_id=242211191]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 586.0
+offset_right = 137.0
+offset_bottom = 675.0
+texture = ExtResource("10_k0l4d")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="lock3" type="TextureRect" parent="." unique_id=1271114319]
+layout_mode = 0
+offset_left = 295.0
+offset_top = 412.0
+offset_right = 379.0
+offset_bottom = 501.0
+texture = ExtResource("10_k0l4d")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="lock4" type="TextureRect" parent="." unique_id=1311860289]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 413.0
+offset_right = 259.0
+offset_bottom = 502.0
+texture = ExtResource("10_k0l4d")
+expand_mode = 1
+stretch_mode = 6
