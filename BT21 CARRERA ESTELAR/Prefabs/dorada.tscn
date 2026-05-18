@@ -1,17 +1,26 @@
-[gd_scene format=3 uid="uid://c0qsi8543wml1"]
+[gd_scene format=3 uid="uid://bcc81quhni747"]
 
 [ext_resource type="Texture2D" uid="uid://c7ejh4wfoc65c" path="res://BT21 CARRERA ESTELAR/Art/UI/dorada.png" id="1_kw3th"]
+[ext_resource type="Script" uid="uid://ckqdl28y3hfei" path="res://BT21 CARRERA ESTELAR/Scrips/frutas.gd" id="1_rr6oj"]
+[ext_resource type="AudioStream" uid="uid://b4diccv64jymy" path="res://BT21 CARRERA ESTELAR/Audio/musica_fondo.mp3/sonido para frutas.mp3" id="3_5rfv3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rr6oj"]
 size = Vector2(54.4375, 47.6875)
 
 [node name="Dorada" type="Area2D" unique_id=1157777249]
+z_index = 10
+script = ExtResource("1_rr6oj")
+nombre_fruta = "dorada"
+valor_puntos = 100
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1919331732]
-position = Vector2(200.00002, 459.99997)
+z_index = 10
 scale = Vector2(0.09133729, 0.08989535)
 texture = ExtResource("1_kw3th")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=3483096]
-position = Vector2(200, 463)
+position = Vector2(-1, 0)
 shape = SubResource("RectangleShape2D_rr6oj")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1768781678]
+stream = ExtResource("3_5rfv3")

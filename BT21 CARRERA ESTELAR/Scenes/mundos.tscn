@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://d2q4kct4idqsv"]
+
+[node name="Niveles" type="Control" unique_id=404772032]
+layout_mode = 3
+anchors_preset = 0

@@ -1,13 +1,14 @@
 extends Control
 
+
+
 # --- CONFIGURACIÓN ---
 # Verifica que esta ruta sea exacta haciendo clic derecho en el archivo y "Copiar Ruta"
-@export var escena_juego = "res://BT21 CARRERA ESTELAR/Scenes/level1.tscn"
-@export var escena_creditos = "res://BT21 CARRERA ESTELAR/Scenes/creditos.tscn"
+@export var escena_juego = "res://BT21 CARRERA ESTELAR/Scenes/nivel2/level_2.tscn"
+#@export var escena_creditos = "res://BT21 CARRERA ESTELAR/Scenes/creditos.tscn"
 
 # --- REFERENCIAS A NODOS ---
 @onready var boton_jugar = $TextureRect/BotonJugar
-@onready var boton_creditos = $TextureRect/BotonCreditos
 @onready var boton_salir = $TextureRect/BotonSalir
 @onready var boton_silenciar = $TextureRect/BotonSilencio
 @onready var press_start = $TextureRect/pressStart
@@ -17,29 +18,42 @@ extends Control
 var esta_silenciado: bool = false
 
 func _ready():
-	#1. Configuración de Audio
-	#if musica:
-		#musica.volume_db = 0
-		#if !musica.playing: musica.play()
+	
+	# 1. Configuración de Audio mediante el Autoload
+	reproducir_musica_menu()
 
-	# 2. Conexión de señales (Todas por código para evitar errores)
+	# 2. Conexión de señales (Mantenemos tu lógica actual)
 	if !boton_jugar.pressed.is_connected(_on_jugar_pressed):
 		boton_jugar.pressed.connect(_on_jugar_pressed)
 	
 	if !boton_salir.pressed.is_connected(_on_salir_pressed):
 		boton_salir.pressed.connect(_on_salir_pressed)
 	
-	if !boton_silenciar.pressed.is_connected(_on_silenciar_pressed):
-		boton_silenciar.pressed.connect(_on_silenciar_pressed)
-	
-	if !boton_creditos.pressed.is_connected(_on_boton_creditos_pressed):
-		boton_creditos.pressed.connect(_on_boton_creditos_pressed)
+	# ... otras conexiones ...
+	if !boton_silenciar.pressed.is_connected(_on_boton_silencio_pressed):
+		boton_silenciar.pressed.connect(_on_boton_silencio_pressed)
 
 	# 3. Preparar pivotes
-	for b in [boton_jugar, boton_creditos, boton_salir, boton_silenciar]:
+	for b in [boton_jugar, boton_salir, boton_silenciar]:
 		if b: b.pivot_offset = b.size / 2
 
 	animar_press_start()
+
+# Nueva función para controlar la música del Autoload
+func reproducir_musica_menu():
+	# Accedemos al nodo 'ReproductorMusica' dentro de nuestro Autoload 'Musica'
+	var repro = get_node_or_null("/root/Musica/ReproductorMusica")
+	
+	if repro:
+		# Ruta de la canción del menú (asegúrate que sea la correcta)
+		var cancion_menu = load("res://BT21 CARRERA ESTELAR/Audio/musica_menu.mp3")
+		
+		# Solo cambiamos la música si NO es la que ya se está reproduciendo
+		# Esto evita que se reinicie al pasar del menú 1 al menú 2
+		if repro.stream != cancion_menu:
+			repro.stream = cancion_menu
+			repro.volume_db = -10.0 # Ajusta el volumen a tu gusto
+			repro.play()
 
 # --- ANIMACIONES ---
 
@@ -63,13 +77,7 @@ func _on_jugar_pressed():
 	if FileAccess.file_exists(escena_juego):
 		get_tree().change_scene_to_file(escena_juego)
 
-func _on_boton_creditos_pressed():
-	var tw = aplicar_efecto_boton(boton_creditos)
-	await tw.finished
-	if FileAccess.file_exists(escena_creditos):
-		get_tree().change_scene_to_file(escena_creditos)
-
-func _on_silenciar_pressed():
+func _on_boton_silencio_pressed():
 	aplicar_efecto_boton(boton_silenciar)
 	esta_silenciado = !esta_silenciado
 	AudioServer.set_bus_mute(AudioServer.get_bus_index("Master"), esta_silenciado)

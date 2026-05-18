@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dlml0ss3l4546"]
+
+[ext_resource type="AudioStream" uid="uid://0idpesnv33ty" path="res://BT21 CARRERA ESTELAR/Audio/musica_fondo.mp3/Dynamite .mp3" id="1_g213a"]
+
+[node name="ReproductorMusica" type="AudioStreamPlayer" unique_id=1533688409]
+stream = ExtResource("1_g213a")

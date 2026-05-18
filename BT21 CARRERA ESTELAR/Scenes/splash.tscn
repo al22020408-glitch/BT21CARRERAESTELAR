@@ -71,3 +71,8 @@ theme_override_font_sizes/font_size = 33
 text = "Cargando..."
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Timer" type="Timer" parent="." unique_id=692754506]
+wait_time = 3.0
+one_shot = true
+autostart = true

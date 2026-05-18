@@ -1,22 +1,22 @@
-[gd_scene format=3 uid="uid://cvsgnj4cddlk0"]
+[gd_scene format=3 uid="uid://due68pyo4ier8"]
 
-[ext_resource type="Texture2D" uid="uid://f4qx3g123q5c" path="res://BT21 CARRERA ESTELAR/Art/Fondos/vista (2).png" id="1_lmvbr"]
-[ext_resource type="Script" uid="uid://bs1odyvi865y1" path="res://BT21 CARRERA ESTELAR/Scrips/level_1.gd" id="1_mq4w1"]
-[ext_resource type="Script" uid="uid://bi0en4x6wh1do" path="res://BT21 CARRERA ESTELAR/Scrips/paral.gd" id="2_o7oud"]
-[ext_resource type="SpriteFrames" uid="uid://d346iuy4rags7" path="res://BT21 CARRERA ESTELAR/Art/personajes/RJ_frames.tres" id="3_2dlnu"]
-[ext_resource type="SpriteFrames" uid="uid://cn4r1g5a5kwag" path="res://BT21 CARRERA ESTELAR/Art/personajes/koya_frames.tres" id="3_mq4w1"]
-[ext_resource type="SpriteFrames" uid="uid://c740e5ns0mqai" path="res://BT21 CARRERA ESTELAR/Art/personajes/shooky_frames.tres" id="4_apf5n"]
-[ext_resource type="Script" uid="uid://cmjwmy2wvqkfr" path="res://BT21 CARRERA ESTELAR/Scrips/CharacterBody2D.gd" id="6_apf5n"]
-[ext_resource type="FontFile" uid="uid://t0a1hdoyeac4" path="res://BT21 CARRERA ESTELAR/Art/UI/Larceny.ttf" id="7_bep7h"]
-[ext_resource type="Script" uid="uid://digeciffr3vyd" path="res://BT21 CARRERA ESTELAR/Scrips/El Script del HUD.gd" id="7_o7oud"]
-[ext_resource type="Texture2D" uid="uid://koikdbluhbxb" path="res://BT21 CARRERA ESTELAR/Art/UI/m_puntaje.png" id="8_affn5"]
-[ext_resource type="Texture2D" uid="uid://ccwwe0rhpuive" path="res://BT21 CARRERA ESTELAR/Art/UI/p_puntaje.png" id="9_bep7h"]
-[ext_resource type="Texture2D" uid="uid://cfcq46bb7vjbf" path="res://BT21 CARRERA ESTELAR/Art/UI/f_puntaje.png" id="10_o7oud"]
-[ext_resource type="Texture2D" uid="uid://bp3wlqk60ojlt" path="res://BT21 CARRERA ESTELAR/Art/UI/pausa.png" id="13_cesvc"]
-[ext_resource type="Texture2D" uid="uid://603hw4m7ohik" path="res://BT21 CARRERA ESTELAR/Art/UI/play.png" id="14_cni4d"]
+[ext_resource type="Script" uid="uid://bboh448gidfyd" path="res://BT21 CARRERA ESTELAR/Scrips/Nivel 2/level_2.gd" id="1_brk8i"]
+[ext_resource type="Script" uid="uid://c3e10srpdtv5v" path="res://BT21 CARRERA ESTELAR/Scrips/Nivel 2/paral2.gd" id="2_brk8i"]
+[ext_resource type="Texture2D" uid="uid://eahnpgmewn6h" path="res://BT21 CARRERA ESTELAR/Art/Fondos/vista noche 2.jpeg" id="3_brk8i"]
+[ext_resource type="Script" uid="uid://cmjwmy2wvqkfr" path="res://BT21 CARRERA ESTELAR/Scrips/CharacterBody2D.gd" id="4_171f6"]
+[ext_resource type="SpriteFrames" uid="uid://cn4r1g5a5kwag" path="res://BT21 CARRERA ESTELAR/Art/personajes/koya_frames.tres" id="5_65217"]
+[ext_resource type="SpriteFrames" uid="uid://d346iuy4rags7" path="res://BT21 CARRERA ESTELAR/Art/personajes/RJ_frames.tres" id="6_q2uap"]
+[ext_resource type="SpriteFrames" uid="uid://c740e5ns0mqai" path="res://BT21 CARRERA ESTELAR/Art/personajes/shooky_frames.tres" id="7_n4yfh"]
+[ext_resource type="Script" uid="uid://e5l3w0xox2dm" path="res://BT21 CARRERA ESTELAR/Scrips/Nivel 2/El Script del HUD2.gd" id="8_brk8i"]
+[ext_resource type="FontFile" uid="uid://t0a1hdoyeac4" path="res://BT21 CARRERA ESTELAR/Art/UI/Larceny.ttf" id="9_icce2"]
+[ext_resource type="Texture2D" uid="uid://koikdbluhbxb" path="res://BT21 CARRERA ESTELAR/Art/UI/m_puntaje.png" id="10_psc66"]
+[ext_resource type="Texture2D" uid="uid://ccwwe0rhpuive" path="res://BT21 CARRERA ESTELAR/Art/UI/p_puntaje.png" id="11_x8ddk"]
+[ext_resource type="Texture2D" uid="uid://cfcq46bb7vjbf" path="res://BT21 CARRERA ESTELAR/Art/UI/f_puntaje.png" id="12_68hsb"]
+[ext_resource type="Texture2D" uid="uid://bp3wlqk60ojlt" path="res://BT21 CARRERA ESTELAR/Art/UI/pausa.png" id="13_krwi1"]
+[ext_resource type="Texture2D" uid="uid://603hw4m7ohik" path="res://BT21 CARRERA ESTELAR/Art/UI/play.png" id="14_fh25d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lmvbr"]
-size = Vector2(16516.25, 59)
+size = Vector2(16514.5, 50)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_apf5n"]
 size = Vector2(37.1875, 373.5)
@@ -27,22 +27,22 @@ height = 122.0
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_bep7h"]
 
-[node name="Level1" type="Node2D" unique_id=1546965697]
-script = ExtResource("1_mq4w1")
+[node name="Level2" type="Node2D" unique_id=1546965697]
+script = ExtResource("1_brk8i")
 
 [node name="Sprite2D" type="ParallaxBackground" parent="." unique_id=175109505]
 scale = Vector2(0.70348835, 0.63501626)
 transform = Transform2D(0.70348835, 0, 0, 0.63501626, 0, 0)
-script = ExtResource("2_o7oud")
+script = ExtResource("2_brk8i")
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="Sprite2D" unique_id=213666152]
 motion_scale = Vector2(0.5, 0.5)
-motion_mirroring = Vector2(685, 0)
+motion_mirroring = Vector2(699, 0)
 
 [node name="TextureRect" type="Sprite2D" parent="Sprite2D/ParallaxLayer" unique_id=1378058212]
 z_index = -1
 position = Vector2(281.45456, 746.43756)
-texture = ExtResource("1_lmvbr")
+texture = ExtResource("3_brk8i")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=397369740]
 z_index = 10
@@ -51,7 +51,7 @@ z_index = 10
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1403312011]
 z_index = 10
-position = Vector2(8261.125, 865.5)
+position = Vector2(8262, 861)
 shape = SubResource("RectangleShape2D_lmvbr")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=695565561]
@@ -60,20 +60,20 @@ shape = SubResource("RectangleShape2D_apf5n")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=2038126986 groups=["jugador"]]
 z_index = 10
-script = ExtResource("6_apf5n")
-frames_koya = ExtResource("3_mq4w1")
-frames_rj = ExtResource("3_2dlnu")
-frames_soky = ExtResource("4_apf5n")
+script = ExtResource("4_171f6")
+frames_koya = ExtResource("5_65217")
+frames_rj = ExtResource("6_q2uap")
+frames_soky = ExtResource("7_n4yfh")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1318050663]
 position = Vector2(48, 769)
 scale = Vector2(1.0643939, 0.8674029)
-sprite_frames = ExtResource("3_mq4w1")
-animation = &"idel"
+sprite_frames = ExtResource("5_65217")
+animation = &"slide"
 speed_scale = 2.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=2050051757]
-position = Vector2(57, 784)
+position = Vector2(59, 776)
 shape = SubResource("CapsuleShape2D_874jm")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=892096460]
@@ -89,14 +89,14 @@ wait_time = 1.5
 autostart = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1264844148]
-script = ExtResource("7_o7oud")
+script = ExtResource("8_brk8i")
 
 [node name="LabelPuntos" type="Label" parent="CanvasLayer" unique_id=1679192992]
 offset_left = 5.0
 offset_top = 103.0
 offset_right = 39.0
 offset_bottom = 135.0
-theme_override_fonts/font = ExtResource("7_bep7h")
+theme_override_fonts/font = ExtResource("9_icce2")
 theme_override_font_sizes/font_size = 32
 horizontal_alignment = 1
 
@@ -106,7 +106,7 @@ offset_top = 64.0
 offset_right = 360.0
 offset_bottom = 101.0
 theme_override_colors/font_color = Color(1, 1, 0.05882353, 1)
-theme_override_fonts/font = ExtResource("7_bep7h")
+theme_override_fonts/font = ExtResource("9_icce2")
 theme_override_font_sizes/font_size = 32
 
 [node name="ContenedorIconos" type="HBoxContainer" parent="CanvasLayer" unique_id=1431144344]
@@ -119,17 +119,17 @@ scale = Vector2(0.44002455, 0.4318057)
 
 [node name="manzana" type="TextureRect" parent="CanvasLayer/ContenedorIconos" unique_id=1776264019]
 layout_mode = 2
-texture = ExtResource("8_affn5")
+texture = ExtResource("10_psc66")
 stretch_mode = 6
 
 [node name="platano" type="TextureRect" parent="CanvasLayer/ContenedorIconos" unique_id=272789274]
 layout_mode = 2
-texture = ExtResource("9_bep7h")
+texture = ExtResource("11_x8ddk")
 stretch_mode = 6
 
 [node name="fresa" type="TextureRect" parent="CanvasLayer/ContenedorIconos" unique_id=1845297339]
 layout_mode = 2
-texture = ExtResource("10_o7oud")
+texture = ExtResource("12_68hsb")
 stretch_mode = 6
 
 [node name="BotonPausa" type="TextureButton" parent="CanvasLayer" unique_id=1525817451]
@@ -138,7 +138,7 @@ offset_top = 7.0
 offset_right = 859.0
 offset_bottom = 435.0
 scale = Vector2(0.097400226, 0.09260117)
-texture_normal = ExtResource("13_cesvc")
+texture_normal = ExtResource("13_krwi1")
 stretch_mode = 6
 
 [node name="BotonPlay" type="TextureButton" parent="CanvasLayer" unique_id=3621746]
@@ -149,12 +149,12 @@ offset_top = 2.0
 offset_right = 840.62225
 offset_bottom = 670.51227
 scale = Vector2(0.07615674, 0.07039515)
-texture_normal = ExtResource("14_cni4d")
+texture_normal = ExtResource("14_fh25d")
 stretch_mode = 6
 
 [node name="TimerLluvia" type="Timer" parent="." unique_id=130734652]
 wait_time = 3.0
 autostart = true
 
-[connection signal="pressed" from="CanvasLayer/BotonPausa" to="CanvasLayer" method="_on_pausa_pressed"]
+[connection signal="pressed" from="CanvasLayer/BotonPausa" to="CanvasLayer" method="_on_boton_pausa_pressed"]
 [connection signal="pressed" from="CanvasLayer/BotonPlay" to="CanvasLayer" method="_on_play_pressed"]

@@ -1,17 +1,32 @@
-[gd_scene format=3 uid="uid://bk4rj6a6p7gex"]
+[gd_scene format=3 uid="uid://4w05yehprbsi"]
 
+[ext_resource type="Script" uid="uid://efk03clc1mmw" path="res://BT21 CARRERA ESTELAR/Scrips/caja.gd" id="1_7lij4"]
 [ext_resource type="Texture2D" uid="uid://c1fo3vkn5egph" path="res://BT21 CARRERA ESTELAR/Art/UI/caja.png" id="1_n8nnx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jsxi2"]
-size = Vector2(76.75, 77.25)
+size = Vector2(65, 67)
 
-[node name="Obstaculos" type="Area2D" unique_id=32237068]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7lij4"]
+size = Vector2(8, 41.5)
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=2055168655]
+script = ExtResource("1_7lij4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=306431680]
-position = Vector2(201.625, 467.375)
+z_index = 5
+position = Vector2(14, 22)
 shape = SubResource("RectangleShape2D_jsxi2")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1454935982]
-position = Vector2(203, 468)
+position = Vector2(4, 24)
 scale = Vector2(0.09920632, 0.11046513)
 texture = ExtResource("1_n8nnx")
+
+[node name="Detector" type="Area2D" parent="." unique_id=1580143625]
+position = Vector2(14, 5)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Detector" unique_id=2063808398]
+position = Vector2(-36, 28)
+shape = SubResource("RectangleShape2D_7lij4")
+
+[connection signal="body_entered" from="Detector" to="." method="_on_detector_body_entered"]

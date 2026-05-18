@@ -1,35 +1,35 @@
-[gd_scene format=3 uid="uid://dtp6fo4db7ort"]
+[gd_scene format=3 uid="uid://d2yn8h77brqu8"]
 
-[ext_resource type="Script" uid="uid://cb6hx8toa60mh" path="res://BT21 CARRERA ESTELAR/Scrips/SeleccionPersonaje.gd" id="1_7leue"]
-[ext_resource type="Texture2D" uid="uid://cxv73w2iftnu1" path="res://BT21 CARRERA ESTELAR/Art/UI/selec.png" id="1_synl7"]
-[ext_resource type="FontFile" uid="uid://t0a1hdoyeac4" path="res://BT21 CARRERA ESTELAR/Art/UI/Larceny.ttf" id="2_uyhsf"]
-[ext_resource type="Texture2D" uid="uid://don1dtwlu7xkv" path="res://BT21 CARRERA ESTELAR/Art/UI/b_back.png" id="3_uyhsf"]
-[ext_resource type="PackedScene" uid="uid://cqbowjtdi3vtw" path="res://BT21 CARRERA ESTELAR/Prefabs/PersonajeItem.tscn" id="4_mbl43"]
-[ext_resource type="Texture2D" uid="uid://crjhxe5o2jru0" path="res://BT21 CARRERA ESTELAR/Art/UI/koya.png" id="5_gogul"]
-[ext_resource type="Texture2D" uid="uid://d1ie40csf3dec" path="res://BT21 CARRERA ESTELAR/Art/UI/Rj.png" id="6_wucic"]
-[ext_resource type="Texture2D" uid="uid://ccdftcwvc5jda" path="res://BT21 CARRERA ESTELAR/Art/UI/Shooky.png" id="7_5bsbc"]
-[ext_resource type="Texture2D" uid="uid://c6p22cdr7qksx" path="res://BT21 CARRERA ESTELAR/Art/UI/Van.png" id="8_7leue"]
-[ext_resource type="Texture2D" uid="uid://baohx4ldn7a0p" path="res://BT21 CARRERA ESTELAR/Art/UI/Koky.png" id="9_5p2u1"]
-[ext_resource type="Texture2D" uid="uid://cauv8m4ocvhx1" path="res://BT21 CARRERA ESTELAR/Art/UI/Tata.png" id="10_23vo5"]
-[ext_resource type="Texture2D" uid="uid://dkrpcxh4ucqdm" path="res://BT21 CARRERA ESTELAR/Art/UI/Mang.png" id="11_58stv"]
-[ext_resource type="Texture2D" uid="uid://bbgmevvybnaeq" path="res://BT21 CARRERA ESTELAR/Art/UI/Chimmy.png" id="12_6bhie"]
-[ext_resource type="Texture2D" uid="uid://mruanonridvs" path="res://BT21 CARRERA ESTELAR/Art/UI/secreto.png" id="13_5oy3d"]
-[ext_resource type="Texture2D" uid="uid://dfwd8w23t1dpo" path="res://BT21 CARRERA ESTELAR/Art/UI/bconfirmar.png" id="14_wucic"]
-[ext_resource type="Texture2D" uid="uid://dda1alt75i6ty" path="res://BT21 CARRERA ESTELAR/Art/UI/cuadro violeta.png" id="16_5p2u1"]
+[ext_resource type="Script" uid="uid://cb6hx8toa60mh" path="res://BT21 CARRERA ESTELAR/Scrips/SeleccionPersonaje.gd" id="1_da5tv"]
+[ext_resource type="Texture2D" uid="uid://crjhxe5o2jru0" path="res://BT21 CARRERA ESTELAR/Art/UI/koya.png" id="2_76303"]
+[ext_resource type="Texture2D" uid="uid://d1ie40csf3dec" path="res://BT21 CARRERA ESTELAR/Art/UI/Rj.png" id="3_vvtbp"]
+[ext_resource type="Texture2D" uid="uid://ccdftcwvc5jda" path="res://BT21 CARRERA ESTELAR/Art/UI/Shooky.png" id="4_ppchv"]
+[ext_resource type="Texture2D" uid="uid://cxv73w2iftnu1" path="res://BT21 CARRERA ESTELAR/Art/UI/selec.png" id="5_saawq"]
+[ext_resource type="FontFile" uid="uid://t0a1hdoyeac4" path="res://BT21 CARRERA ESTELAR/Art/UI/Larceny.ttf" id="6_7orpw"]
+[ext_resource type="Texture2D" uid="uid://don1dtwlu7xkv" path="res://BT21 CARRERA ESTELAR/Art/UI/b_back.png" id="7_h3vj7"]
+[ext_resource type="PackedScene" uid="uid://cqbowjtdi3vtw" path="res://BT21 CARRERA ESTELAR/Prefabs/PersonajeItem.tscn" id="8_tvjpr"]
+[ext_resource type="Texture2D" uid="uid://c6p22cdr7qksx" path="res://BT21 CARRERA ESTELAR/Art/UI/Van.png" id="9_quq8g"]
+[ext_resource type="Texture2D" uid="uid://baohx4ldn7a0p" path="res://BT21 CARRERA ESTELAR/Art/UI/Koky.png" id="10_nk1ie"]
+[ext_resource type="Texture2D" uid="uid://cauv8m4ocvhx1" path="res://BT21 CARRERA ESTELAR/Art/UI/Tata.png" id="11_ilj2m"]
+[ext_resource type="Texture2D" uid="uid://dkrpcxh4ucqdm" path="res://BT21 CARRERA ESTELAR/Art/UI/Mang.png" id="12_277pl"]
+[ext_resource type="Texture2D" uid="uid://bbgmevvybnaeq" path="res://BT21 CARRERA ESTELAR/Art/UI/Chimmy.png" id="13_h55f6"]
+[ext_resource type="Texture2D" uid="uid://mruanonridvs" path="res://BT21 CARRERA ESTELAR/Art/UI/secreto.png" id="14_8jgag"]
+[ext_resource type="Texture2D" uid="uid://dfwd8w23t1dpo" path="res://BT21 CARRERA ESTELAR/Art/UI/bconfirmar.png" id="15_3ljoi"]
+[ext_resource type="Texture2D" uid="uid://dda1alt75i6ty" path="res://BT21 CARRERA ESTELAR/Art/UI/cuadro violeta.png" id="16_gx22g"]
 
 [node name="SeleccionPersonaje" type="Control" unique_id=1101031649]
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("1_7leue")
-textura_koya = ExtResource("5_gogul")
-textura_rj = ExtResource("6_wucic")
-textura_soky = ExtResource("7_5bsbc")
+script = ExtResource("1_da5tv")
+textura_koya = ExtResource("2_76303")
+textura_rj = ExtResource("3_vvtbp")
+textura_soky = ExtResource("4_ppchv")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1076644623]
 layout_mode = 0
 offset_right = 428.0
 offset_bottom = 935.0
-texture = ExtResource("1_synl7")
+texture = ExtResource("5_saawq")
 expand_mode = 1
 stretch_mode = 6
 
@@ -45,7 +45,7 @@ offset_top = 106.0
 offset_right = 414.0
 offset_bottom = 166.0
 theme_override_colors/font_color = Color(1, 1, 0.02745098, 1)
-theme_override_fonts/font = ExtResource("2_uyhsf")
+theme_override_fonts/font = ExtResource("6_7orpw")
 theme_override_font_sizes/font_size = 52
 text = "Elige TU PERSONAJE"
 horizontal_alignment = 1
@@ -57,7 +57,7 @@ offset_top = 161.0
 offset_right = 406.0
 offset_bottom = 221.0
 theme_override_colors/font_color = Color(1.25, 0.406, 1.221, 1)
-theme_override_fonts/font = ExtResource("2_uyhsf")
+theme_override_fonts/font = ExtResource("6_7orpw")
 theme_override_font_sizes/font_size = 52
 text = "BT21"
 horizontal_alignment = 1
@@ -69,7 +69,7 @@ offset_top = 10.0
 offset_right = 1637.0
 offset_bottom = 666.0
 scale = Vector2(0.0469825, 0.07058332)
-texture_normal = ExtResource("3_uyhsf")
+texture_normal = ExtResource("7_h3vj7")
 stretch_mode = 6
 
 [node name="GridContainer" type="GridContainer" parent="UI" unique_id=420670381]
@@ -80,7 +80,7 @@ offset_right = 63.0
 offset_bottom = 76.0
 columns = 3
 
-[node name="personajes" parent="UI/GridContainer" unique_id=1466002406 instance=ExtResource("4_mbl43")]
+[node name="personajes" parent="UI/GridContainer" unique_id=1466002406 instance=ExtResource("8_tvjpr")]
 layout_mode = 2
 
 [node name="koya" type="TextureButton" parent="UI/GridContainer/personajes" unique_id=955456297]
@@ -90,7 +90,7 @@ offset_top = 195.0
 offset_right = 362.0
 offset_bottom = 606.0
 scale = Vector2(0.3298722, 0.359489)
-texture_normal = ExtResource("5_gogul")
+texture_normal = ExtResource("2_76303")
 
 [node name="RJ" type="TextureButton" parent="UI/GridContainer/personajes" unique_id=293123170]
 layout_mode = 0
@@ -99,7 +99,7 @@ offset_top = 201.0
 offset_right = 431.0
 offset_bottom = 612.0
 scale = Vector2(0.32509238, 0.3232968)
-texture_normal = ExtResource("6_wucic")
+texture_normal = ExtResource("3_vvtbp")
 
 [node name="soky" type="TextureButton" parent="UI/GridContainer/personajes" unique_id=2120422860]
 layout_mode = 0
@@ -108,37 +108,37 @@ offset_top = 235.0
 offset_right = 621.13727
 offset_bottom = 525.7545
 scale = Vector2(0.32509238, 0.3232968)
-texture_normal = ExtResource("7_5bsbc")
+texture_normal = ExtResource("4_ppchv")
 
 [node name="Van" type="Sprite2D" parent="UI/GridContainer/personajes" unique_id=407469115]
 visible = false
 position = Vector2(219, 632)
 scale = Vector2(0.32509238, 0.3232968)
-texture = ExtResource("8_7leue")
+texture = ExtResource("9_quq8g")
 
 [node name="kok" type="Sprite2D" parent="UI/GridContainer/personajes" unique_id=728297035]
 visible = false
 position = Vector2(110, 639)
 scale = Vector2(0.32509238, 0.3232968)
-texture = ExtResource("9_5p2u1")
+texture = ExtResource("10_nk1ie")
 
 [node name="tete" type="Sprite2D" parent="UI/GridContainer/personajes" unique_id=736056978]
 visible = false
 position = Vector2(337, 452)
 scale = Vector2(0.32509238, 0.3232968)
-texture = ExtResource("10_23vo5")
+texture = ExtResource("11_ilj2m")
 
 [node name="mang" type="Sprite2D" parent="UI/GridContainer/personajes" unique_id=1304228517]
 visible = false
 position = Vector2(98, 458)
 scale = Vector2(0.32509238, 0.3232968)
-texture = ExtResource("11_58stv")
+texture = ExtResource("12_277pl")
 
 [node name="mimi" type="Sprite2D" parent="UI/GridContainer/personajes" unique_id=998383004]
 visible = false
 position = Vector2(217.00002, 452)
 scale = Vector2(0.32509238, 0.3232968)
-texture = ExtResource("12_6bhie")
+texture = ExtResource("13_h55f6")
 
 [node name="num" type="Label" parent="UI/GridContainer/personajes" unique_id=1527021109]
 layout_mode = 0
@@ -147,7 +147,7 @@ offset_top = 207.0
 offset_right = 115.0
 offset_bottom = 230.0
 theme_override_colors/font_color = Color(0.093160845, 0.093160845, 0.09316083, 1)
-theme_override_fonts/font = ExtResource("2_uyhsf")
+theme_override_fonts/font = ExtResource("6_7orpw")
 theme_override_font_sizes/font_size = 25
 text = "N1"
 horizontal_alignment = 1
@@ -159,7 +159,7 @@ offset_top = 203.0
 offset_right = 236.0
 offset_bottom = 226.0
 theme_override_colors/font_color = Color(0.093160845, 0.093160845, 0.09316083, 1)
-theme_override_fonts/font = ExtResource("2_uyhsf")
+theme_override_fonts/font = ExtResource("6_7orpw")
 theme_override_font_sizes/font_size = 25
 text = "N1"
 horizontal_alignment = 1
@@ -171,7 +171,7 @@ offset_top = 207.0
 offset_right = 356.0
 offset_bottom = 230.0
 theme_override_colors/font_color = Color(0.093160845, 0.093160845, 0.09316083, 1)
-theme_override_fonts/font = ExtResource("2_uyhsf")
+theme_override_fonts/font = ExtResource("6_7orpw")
 theme_override_font_sizes/font_size = 25
 text = "N1"
 horizontal_alignment = 1
@@ -183,7 +183,7 @@ offset_top = 385.0
 offset_right = 116.0
 offset_bottom = 408.0
 theme_override_colors/font_color = Color(0.093160845, 0.093160845, 0.09316083, 1)
-theme_override_fonts/font = ExtResource("2_uyhsf")
+theme_override_fonts/font = ExtResource("6_7orpw")
 theme_override_font_sizes/font_size = 25
 text = "N2"
 horizontal_alignment = 1
@@ -195,7 +195,7 @@ offset_top = 387.0
 offset_right = 240.0
 offset_bottom = 410.0
 theme_override_colors/font_color = Color(0.093160845, 0.093160845, 0.09316083, 1)
-theme_override_fonts/font = ExtResource("2_uyhsf")
+theme_override_fonts/font = ExtResource("6_7orpw")
 theme_override_font_sizes/font_size = 25
 text = "N2"
 horizontal_alignment = 1
@@ -207,7 +207,7 @@ offset_top = 387.0
 offset_right = 358.0
 offset_bottom = 410.0
 theme_override_colors/font_color = Color(0.093160845, 0.093160845, 0.09316083, 1)
-theme_override_fonts/font = ExtResource("2_uyhsf")
+theme_override_fonts/font = ExtResource("6_7orpw")
 theme_override_font_sizes/font_size = 25
 text = "N2"
 horizontal_alignment = 1
@@ -219,7 +219,7 @@ offset_top = 563.0
 offset_right = 117.0
 offset_bottom = 586.0
 theme_override_colors/font_color = Color(0.093160845, 0.093160845, 0.09316083, 1)
-theme_override_fonts/font = ExtResource("2_uyhsf")
+theme_override_fonts/font = ExtResource("6_7orpw")
 theme_override_font_sizes/font_size = 25
 text = "N3"
 horizontal_alignment = 1
@@ -231,7 +231,7 @@ offset_top = 565.0
 offset_right = 237.0
 offset_bottom = 588.0
 theme_override_colors/font_color = Color(0.093160845, 0.093160845, 0.09316083, 1)
-theme_override_fonts/font = ExtResource("2_uyhsf")
+theme_override_fonts/font = ExtResource("6_7orpw")
 theme_override_font_sizes/font_size = 25
 text = "N3"
 horizontal_alignment = 1
@@ -243,7 +243,7 @@ offset_top = 567.0
 offset_right = 356.0
 offset_bottom = 590.0
 theme_override_colors/font_color = Color(0.093160845, 0.093160845, 0.09316083, 1)
-theme_override_fonts/font = ExtResource("2_uyhsf")
+theme_override_fonts/font = ExtResource("6_7orpw")
 theme_override_font_sizes/font_size = 25
 text = "N3"
 horizontal_alignment = 1
@@ -255,7 +255,7 @@ offset_top = 333.0
 offset_right = 117.0
 offset_bottom = 356.0
 theme_override_colors/font_color = Color(0.093160845, 0.093160845, 0.09316083, 1)
-theme_override_fonts/font = ExtResource("2_uyhsf")
+theme_override_fonts/font = ExtResource("6_7orpw")
 theme_override_font_sizes/font_size = 25
 text = "Koya"
 horizontal_alignment = 1
@@ -267,7 +267,7 @@ offset_top = 335.0
 offset_right = 239.0
 offset_bottom = 358.0
 theme_override_colors/font_color = Color(0.093160845, 0.093160845, 0.09316083, 1)
-theme_override_fonts/font = ExtResource("2_uyhsf")
+theme_override_fonts/font = ExtResource("6_7orpw")
 theme_override_font_sizes/font_size = 25
 text = "RJ"
 horizontal_alignment = 1
@@ -279,7 +279,7 @@ offset_top = 334.0
 offset_right = 367.0
 offset_bottom = 357.0
 theme_override_colors/font_color = Color(0.093160845, 0.093160845, 0.09316083, 1)
-theme_override_fonts/font = ExtResource("2_uyhsf")
+theme_override_fonts/font = ExtResource("6_7orpw")
 theme_override_font_sizes/font_size = 25
 text = "Shooky"
 horizontal_alignment = 1
@@ -291,7 +291,7 @@ offset_top = 511.0
 offset_right = 129.0
 offset_bottom = 534.0
 theme_override_colors/font_color = Color(0.093160845, 0.093160845, 0.09316083, 1)
-theme_override_fonts/font = ExtResource("2_uyhsf")
+theme_override_fonts/font = ExtResource("6_7orpw")
 theme_override_font_sizes/font_size = 25
 text = "Mang"
 horizontal_alignment = 1
@@ -303,7 +303,7 @@ offset_top = 515.0
 offset_right = 251.0
 offset_bottom = 538.0
 theme_override_colors/font_color = Color(0.093160845, 0.093160845, 0.09316083, 1)
-theme_override_fonts/font = ExtResource("2_uyhsf")
+theme_override_fonts/font = ExtResource("6_7orpw")
 theme_override_font_sizes/font_size = 23
 text = "Chimmy"
 horizontal_alignment = 1
@@ -315,7 +315,7 @@ offset_top = 514.0
 offset_right = 368.0
 offset_bottom = 537.0
 theme_override_colors/font_color = Color(0.093160845, 0.093160845, 0.09316083, 1)
-theme_override_fonts/font = ExtResource("2_uyhsf")
+theme_override_fonts/font = ExtResource("6_7orpw")
 theme_override_font_sizes/font_size = 23
 text = "Tata"
 horizontal_alignment = 1
@@ -327,7 +327,7 @@ offset_top = 695.0
 offset_right = 125.0
 offset_bottom = 718.0
 theme_override_colors/font_color = Color(0.093160845, 0.093160845, 0.09316083, 1)
-theme_override_fonts/font = ExtResource("2_uyhsf")
+theme_override_fonts/font = ExtResource("6_7orpw")
 theme_override_font_sizes/font_size = 23
 text = "Koky"
 horizontal_alignment = 1
@@ -339,7 +339,7 @@ offset_top = 696.0
 offset_right = 247.0
 offset_bottom = 719.0
 theme_override_colors/font_color = Color(0.093160845, 0.093160845, 0.09316083, 1)
-theme_override_fonts/font = ExtResource("2_uyhsf")
+theme_override_fonts/font = ExtResource("6_7orpw")
 theme_override_font_sizes/font_size = 23
 text = "Van"
 horizontal_alignment = 1
@@ -351,7 +351,7 @@ offset_top = 697.0
 offset_right = 381.0
 offset_bottom = 720.0
 theme_override_colors/font_color = Color(0.093160845, 0.093160845, 0.09316083, 1)
-theme_override_fonts/font = ExtResource("2_uyhsf")
+theme_override_fonts/font = ExtResource("6_7orpw")
 theme_override_font_sizes/font_size = 17
 text = "Proximamente"
 horizontal_alignment = 1
@@ -363,7 +363,7 @@ offset_left = 49.0
 offset_top = 229.0
 offset_right = 145.0
 offset_bottom = 327.0
-texture = ExtResource("13_5oy3d")
+texture = ExtResource("14_8jgag")
 expand_mode = 1
 stretch_mode = 6
 
@@ -373,7 +373,7 @@ offset_left = 55.0
 offset_top = 416.0
 offset_right = 132.0
 offset_bottom = 494.0
-texture = ExtResource("13_5oy3d")
+texture = ExtResource("14_8jgag")
 expand_mode = 1
 stretch_mode = 6
 
@@ -383,7 +383,7 @@ offset_left = 178.0
 offset_top = 419.0
 offset_right = 255.0
 offset_bottom = 497.0
-texture = ExtResource("13_5oy3d")
+texture = ExtResource("14_8jgag")
 expand_mode = 1
 stretch_mode = 6
 
@@ -393,7 +393,7 @@ offset_left = 299.0
 offset_top = 423.0
 offset_right = 376.0
 offset_bottom = 501.0
-texture = ExtResource("13_5oy3d")
+texture = ExtResource("14_8jgag")
 expand_mode = 1
 stretch_mode = 6
 
@@ -403,7 +403,7 @@ offset_left = 59.0
 offset_top = 594.0
 offset_right = 136.0
 offset_bottom = 672.0
-texture = ExtResource("13_5oy3d")
+texture = ExtResource("14_8jgag")
 expand_mode = 1
 stretch_mode = 6
 
@@ -413,7 +413,7 @@ offset_left = 175.0
 offset_top = 600.0
 offset_right = 252.0
 offset_bottom = 678.0
-texture = ExtResource("13_5oy3d")
+texture = ExtResource("14_8jgag")
 expand_mode = 1
 stretch_mode = 6
 
@@ -423,7 +423,7 @@ offset_left = 298.0
 offset_top = 596.0
 offset_right = 375.0
 offset_bottom = 674.0
-texture = ExtResource("13_5oy3d")
+texture = ExtResource("14_8jgag")
 expand_mode = 1
 stretch_mode = 6
 
@@ -434,7 +434,7 @@ offset_top = 766.0
 offset_right = 1045.0
 offset_bottom = 1173.0
 scale = Vector2(0.23287456, 0.30532888)
-texture_normal = ExtResource("14_wucic")
+texture_normal = ExtResource("15_3ljoi")
 stretch_mode = 6
 
 [node name="PopupSeleccion" type="Control" parent="." unique_id=1632721038]
@@ -451,7 +451,7 @@ offset_left = 54.0
 offset_top = 247.0
 offset_right = 386.0
 offset_bottom = 752.0
-texture = ExtResource("16_5p2u1")
+texture = ExtResource("16_gx22g")
 expand_mode = 1
 stretch_mode = 6
 
@@ -467,7 +467,7 @@ anchor_left = 0.95
 anchor_top = 2.3
 anchor_right = 7.525
 anchor_bottom = 9.975
-texture = ExtResource("10_23vo5")
+texture = ExtResource("11_ilj2m")
 expand_mode = 1
 stretch_mode = 6
 metadata/_edit_use_anchors_ = true
@@ -479,7 +479,7 @@ offset_top = 423.0
 offset_right = 278.0
 offset_bottom = 479.0
 theme_override_colors/font_color = Color(0.06136909, 0.0613691, 0.06136909, 1)
-theme_override_fonts/font = ExtResource("2_uyhsf")
+theme_override_fonts/font = ExtResource("6_7orpw")
 theme_override_font_sizes/font_size = 63
 text = "KOKY"
 horizontal_alignment = 1

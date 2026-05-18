@@ -5,11 +5,11 @@
 [ext_resource type="Texture2D" uid="uid://bfwffbhxp5b5x" path="res://BT21 CARRERA ESTELAR/Art/UI/frutas2.png" id="3_jbt3e"]
 [ext_resource type="Texture2D" uid="uid://ba7i30kfoc55m" path="res://BT21 CARRERA ESTELAR/Art/UI/vidas.png" id="4_lxo80"]
 [ext_resource type="FontFile" uid="uid://t0a1hdoyeac4" path="res://BT21 CARRERA ESTELAR/Art/UI/Larceny.ttf" id="5_g84ko"]
+[ext_resource type="Texture2D" uid="uid://b47xvhkacely4" path="res://BT21 CARRERA ESTELAR/Art/UI/corazon.png" id="5_ouxen"]
 [ext_resource type="Texture2D" uid="uid://dwp4uhpnwms4e" path="res://BT21 CARRERA ESTELAR/Art/UI/b_jugar.png" id="6_5ag1r"]
 [ext_resource type="Texture2D" uid="uid://dt3qqwe8ipw52" path="res://BT21 CARRERA ESTELAR/Art/UI/b_creditos.png" id="7_5ijlb"]
 [ext_resource type="Texture2D" uid="uid://dqlo3o2k4055x" path="res://BT21 CARRERA ESTELAR/Art/UI/b_salir.png" id="8_ogig0"]
 [ext_resource type="Texture2D" uid="uid://b3xjsj53vdjm5" path="res://BT21 CARRERA ESTELAR/Art/UI/b_silenciar.png" id="9_i3l4l"]
-[ext_resource type="AudioStream" uid="uid://0idpesnv33ty" path="res://BT21 CARRERA ESTELAR/Audio/musica_fondo.mp3/Dynamite .mp3" id="10_1thnf"]
 
 [node name="MenuBts" type="Control" unique_id=1209001088]
 layout_mode = 3
@@ -55,6 +55,58 @@ offset_bottom = 698.0
 scale = Vector2(0.8800008, 0.3999986)
 texture = ExtResource("4_lxo80")
 expand_mode = 1
+
+[node name="Control" type="Control" parent="TextureRect/Vidas" unique_id=63183103]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect/Vidas/Control" unique_id=1634385696]
+layout_mode = 0
+offset_left = 111.363525
+offset_top = 185.00063
+offset_right = 406.8178
+offset_bottom = 470.00165
+scale = Vector2(0.17466086, 0.3171362)
+texture = ExtResource("5_ouxen")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect/Vidas/Control" unique_id=1030319361]
+layout_mode = 0
+offset_left = 231.81796
+offset_top = 185.00063
+offset_right = 527.2722
+offset_bottom = 470.00165
+scale = Vector2(0.17466086, 0.3171362)
+texture = ExtResource("5_ouxen")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TextureRect3" type="TextureRect" parent="TextureRect/Vidas/Control" unique_id=150096903]
+layout_mode = 0
+offset_left = 172.7271
+offset_top = 185.00063
+offset_right = 468.1814
+offset_bottom = 470.00165
+scale = Vector2(0.17466086, 0.3171362)
+texture = ExtResource("5_ouxen")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Label" type="Label" parent="TextureRect/Vidas/Control" unique_id=13044757]
+layout_mode = 0
+offset_left = 111.36353
+offset_top = 90.00028
+offset_right = 222.72707
+offset_bottom = 152.50046
+scale = Vector2(1.0350301, 1.9117967)
+theme_override_colors/font_color = Color(0.010179379, 6.574736e-07, 0.010200977, 1)
+theme_override_fonts/font = ExtResource("5_g84ko")
+theme_override_font_sizes/font_size = 32
+text = "NIVEL 1"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Score" type="Label" parent="TextureRect" unique_id=258506903]
 layout_mode = 0
@@ -130,6 +182,4 @@ texture_normal = ExtResource("9_i3l4l")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1619873622]
-stream = ExtResource("10_1thnf")
-autoplay = true
+[connection signal="pressed" from="TextureRect/BotonCreditos" to="." method="_on_boton_creditos_pressed"]

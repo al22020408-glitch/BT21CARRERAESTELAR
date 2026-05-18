@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://h37bxvfuqdxf"]
+
+[ext_resource type="Texture2D" uid="uid://cd8xodn1g80gu" path="res://BT21 CARRERA ESTELAR/Art/UI/estrella.png" id="1_058p5"]
+[ext_resource type="Script" uid="uid://cd1gshpmb2dy2" path="res://BT21 CARRERA ESTELAR/Scrips/EstrellaFinal.gd" id="1_s2may"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_058p5"]
+radius = 64.66065
+
+[node name="EstrellaFinal" type="Area2D" unique_id=1875487366]
+collision_layer = 0
+script = ExtResource("1_s2may")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1872790930]
+scale = Vector2(1.3143712, 1.2417219)
+texture = ExtResource("1_058p5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1669655800]
+position = Vector2(5, 9)
+shape = SubResource("CircleShape2D_058p5")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="." unique_id=277899935]
+amount = 15
+emission_shape = 1
+emission_sphere_radius = 1.0
+gravity = Vector2(0, 0)
+color = Color(1, 1, 0.043137256, 1)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -15,11 +15,25 @@ run/main_scene="uid://b4hsgi2neahys"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
 
+[audio]
+
+buses/default_bus_layout="uid://dyp3s8p6xtqpl"
+
+[autoload]
+
+Global="*uid://5agc7mbr4asg"
+Musica="*uid://dlml0ss3l4546"
+PuntosGlobales="*uid://dqxexo7jd8yrx"
+
 [display]
 
 window/size/viewport_width=430
 window/size/viewport_height=932
 window/stretch/mode="canvas_items"
+
+[global_group]
+
+jugador=""
 
 [physics]
 

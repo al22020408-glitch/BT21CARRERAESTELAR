@@ -1,17 +1,21 @@
-[gd_scene format=3 uid="uid://dqptxoctp2ldj"]
+[gd_scene format=3 uid="uid://cc4aa3wr1r5x8"]
 
+[ext_resource type="Script" uid="uid://b54sfu5ag5c31" path="res://BT21 CARRERA ESTELAR/Scrips/lodo.gd" id="1_l47m3"]
 [ext_resource type="Texture2D" uid="uid://eecr5kt5kqbj" path="res://BT21 CARRERA ESTELAR/Art/UI/lodo.png" id="1_ym6s2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jsxi2"]
-size = Vector2(140, 78)
+size = Vector2(140, 76)
 
-[node name="Obstaculos" type="Area2D" unique_id=32237068]
+[node name="Obstaculos" type="Area2D" unique_id=854078728]
+z_index = -5
+script = ExtResource("1_l47m3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=306431680]
-position = Vector2(192, 487)
+position = Vector2(-3, 124)
 shape = SubResource("RectangleShape2D_jsxi2")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1454935982]
-position = Vector2(197, 461)
+z_index = -1
+position = Vector2(6, 92.99999)
 scale = Vector2(0.20634918, 0.18313962)
 texture = ExtResource("1_ym6s2")

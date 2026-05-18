@@ -1,17 +1,26 @@
-[gd_scene format=3 uid="uid://b5hibdd5j7g1v"]
+[gd_scene format=3 uid="uid://l1j4d1v5vnb3"]
 
 [ext_resource type="Texture2D" uid="uid://b5fprk2ppk1sj" path="res://BT21 CARRERA ESTELAR/Art/UI/fresa.png" id="1_bpn55"]
+[ext_resource type="Script" uid="uid://ckqdl28y3hfei" path="res://BT21 CARRERA ESTELAR/Scrips/frutas.gd" id="1_jmhpt"]
+[ext_resource type="AudioStream" uid="uid://b4diccv64jymy" path="res://BT21 CARRERA ESTELAR/Audio/musica_fondo.mp3/sonido para frutas.mp3" id="3_r1dlw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6ihif"]
 size = Vector2(48.4375, 42.625)
 
 [node name="Fruta" type="Area2D" unique_id=704562417]
+z_index = 10
+script = ExtResource("1_jmhpt")
+nombre_fruta = "fresa"
+valor_puntos = 20
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2034299548]
-position = Vector2(197.59373, 463.6875)
+z_index = 10
 scale = Vector2(0.20713499, 0.15850915)
 texture = ExtResource("1_bpn55")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1636366515]
-position = Vector2(198.78125, 466.3125)
+position = Vector2(-2, 1)
 shape = SubResource("RectangleShape2D_6ihif")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=521025219]
+stream = ExtResource("3_r1dlw")
