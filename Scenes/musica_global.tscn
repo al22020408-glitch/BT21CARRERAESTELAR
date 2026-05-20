@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://ch7m8rqpwuwsg"]
+
+[ext_resource type="AudioStream" uid="uid://0idpesnv33ty" path="res://Audio/musica_fondo.mp3/Dynamite .mp3" id="1_bgoha"]
+[ext_resource type="Script" uid="uid://c0slwt862d5q8" path="res://Scrips/musica_global.gd" id="2_85v2k"]
+
+[node name="ReproductorMusica" type="AudioStreamPlayer" unique_id=31137113]
+stream = ExtResource("1_bgoha")
+autoplay = true
+script = ExtResource("2_85v2k")

@@ -1,0 +1,166 @@
+[gd_scene format=3 uid="uid://dtof3r10o1dby"]
+
+[ext_resource type="Script" uid="uid://d2o8x83va88uw" path="res://Scrips/menu_bts.gd" id="1_ouxen"]
+[ext_resource type="Texture2D" uid="uid://pcvkl3db647v" path="res://Art/Fondos/vista.png" id="2_ouxen"]
+[ext_resource type="Texture2D" uid="uid://bfwffbhxp5b5x" path="res://Art/UI/frutas2.png" id="3_jbt3e"]
+[ext_resource type="Texture2D" uid="uid://ba7i30kfoc55m" path="res://Art/UI/vidas.png" id="4_lxo80"]
+[ext_resource type="FontFile" uid="uid://t0a1hdoyeac4" path="res://Art/UI/Larceny.ttf" id="5_g84ko"]
+[ext_resource type="Texture2D" uid="uid://b47xvhkacely4" path="res://Art/UI/corazon.png" id="5_iumsm"]
+[ext_resource type="Texture2D" uid="uid://dwp4uhpnwms4e" path="res://Art/UI/b_jugar.png" id="6_5ag1r"]
+[ext_resource type="Texture2D" uid="uid://dt3qqwe8ipw52" path="res://Art/UI/b_creditos.png" id="7_5ijlb"]
+[ext_resource type="Texture2D" uid="uid://dqlo3o2k4055x" path="res://Art/UI/b_salir.png" id="8_ogig0"]
+[ext_resource type="Texture2D" uid="uid://b3xjsj53vdjm5" path="res://Art/UI/b_silenciar.png" id="9_i3l4l"]
+
+[node name="MenuBts" type="Control" unique_id=1209001088]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ouxen")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=33374302]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -4.0
+offset_top = 4.0
+offset_right = -2.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_ouxen")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Frutas" type="TextureRect" parent="TextureRect" unique_id=1771544667]
+layout_mode = 0
+offset_left = 179.00002
+offset_top = 29.0
+offset_right = 337.0
+offset_bottom = 98.0
+scale = Vector2(1.28, 1.24)
+texture = ExtResource("3_jbt3e")
+expand_mode = 1
+
+[node name="Vidas" type="TextureRect" parent="TextureRect" unique_id=1794328737]
+clip_contents = true
+layout_mode = 0
+offset_left = 64.0
+offset_top = 200.00002
+offset_right = 396.0
+offset_bottom = 698.0
+scale = Vector2(0.8800008, 0.3999986)
+texture = ExtResource("4_lxo80")
+expand_mode = 1
+
+[node name="VBoxContainer" type="HBoxContainer" parent="TextureRect/Vidas" unique_id=1739148336]
+layout_mode = 0
+offset_left = 115.90898
+offset_top = 185.0006
+offset_right = 2325.909
+offset_bottom = 2140.0005
+scale = Vector2(0.06557483, 0.04749295)
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect/Vidas/VBoxContainer" unique_id=729602889]
+layout_mode = 2
+texture = ExtResource("5_iumsm")
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect/Vidas/VBoxContainer" unique_id=1305564362]
+layout_mode = 2
+texture = ExtResource("5_iumsm")
+
+[node name="TextureRect3" type="TextureRect" parent="TextureRect/Vidas/VBoxContainer" unique_id=1139421566]
+layout_mode = 2
+texture = ExtResource("5_iumsm")
+
+[node name="Label" type="Label" parent="TextureRect/Vidas" unique_id=358779293]
+layout_mode = 0
+offset_left = 129.54533
+offset_top = 122.50039
+offset_right = 191.54533
+offset_bottom = 149.5004
+scale = Vector2(1.3764704, 2.1462812)
+theme_override_colors/font_color = Color(0.017020682, 0.017020678, 0.017020678, 1)
+theme_override_fonts/font = ExtResource("5_g84ko")
+theme_override_font_sizes/font_size = 30
+text = "NIVEL 1"
+
+[node name="Score" type="Label" parent="TextureRect" unique_id=258506903]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 46.0
+offset_right = 134.0
+offset_bottom = 73.0
+theme_override_fonts/font = ExtResource("5_g84ko")
+theme_override_font_sizes/font_size = 35
+text = "SCORE : 00"
+
+[node name="pressStart" type="Label" parent="TextureRect" unique_id=572641056]
+layout_mode = 0
+offset_left = 143.0
+offset_top = 383.0
+offset_right = 286.0
+offset_bottom = 426.0
+theme_override_fonts/font = ExtResource("5_g84ko")
+theme_override_font_sizes/font_size = 35
+text = "press start"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Level" type="Label" parent="TextureRect" unique_id=393349354]
+visible = false
+layout_mode = 0
+offset_left = 162.0
+offset_top = 827.0
+offset_right = 255.0
+offset_bottom = 863.0
+theme_override_fonts/font = ExtResource("5_g84ko")
+theme_override_font_sizes/font_size = 40
+text = "LEVEL: 1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotonJugar" type="TextureButton" parent="TextureRect" unique_id=281568043]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 406.0
+offset_right = 331.0
+offset_bottom = 499.0
+texture_normal = ExtResource("6_5ag1r")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="BotonCreditos" type="TextureButton" parent="TextureRect" unique_id=1773844639]
+layout_mode = 0
+offset_left = 123.0
+offset_top = 525.0
+offset_right = 292.0
+offset_bottom = 621.0
+texture_normal = ExtResource("7_5ijlb")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="BotonSalir" type="TextureButton" parent="TextureRect" unique_id=619794731]
+layout_mode = 0
+offset_left = 126.0
+offset_top = 585.0
+offset_right = 305.0
+offset_bottom = 696.0
+texture_normal = ExtResource("8_ogig0")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="BotonSilencio" type="TextureButton" parent="TextureRect" unique_id=565369737]
+layout_mode = 0
+offset_left = 122.0
+offset_top = 660.0
+offset_right = 287.0
+offset_bottom = 761.0
+texture_normal = ExtResource("9_i3l4l")
+ignore_texture_size = true
+stretch_mode = 0
+
+[connection signal="pressed" from="TextureRect/BotonCreditos" to="." method="_on_boton_creditos_pressed"]

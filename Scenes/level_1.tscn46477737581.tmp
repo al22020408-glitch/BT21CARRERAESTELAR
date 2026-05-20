@@ -1,0 +1,156 @@
+[gd_scene format=3 uid="uid://ddfh52fswwwn5"]
+
+[ext_resource type="Script" uid="uid://dumqb7pxtl4w7" path="res://Scrips/Level1.gd" id="1_chwpn"]
+[ext_resource type="Script" uid="uid://bsraliwl1mdev" path="res://Scrips/CharacterBody2D.gd" id="3_chwpn"]
+[ext_resource type="Texture2D" uid="uid://f4qx3g123q5c" path="res://Art/Fondos/vista (2).png" id="3_m88gk"]
+[ext_resource type="SpriteFrames" uid="uid://bf6j45xuxrlxr" path="res://Art/personajes/koya_frames.tres" id="4_af3po"]
+[ext_resource type="SpriteFrames" uid="uid://cyru01c3krt1t" path="res://Art/personajes/RJ_frames.tres" id="6_bp12t"]
+[ext_resource type="SpriteFrames" uid="uid://dsj2b6w1rx1kg" path="res://Art/personajes/shooky_frames.tres" id="7_wrje7"]
+[ext_resource type="FontFile" uid="uid://t0a1hdoyeac4" path="res://Art/UI/Larceny.ttf" id="9_xtl32"]
+[ext_resource type="Texture2D" uid="uid://koikdbluhbxb" path="res://Art/UI/m_puntaje.png" id="10_j6fun"]
+[ext_resource type="Texture2D" uid="uid://ccwwe0rhpuive" path="res://Art/UI/p_puntaje.png" id="11_efcvd"]
+[ext_resource type="Texture2D" uid="uid://cfcq46bb7vjbf" path="res://Art/UI/f_puntaje.png" id="12_c6ru1"]
+[ext_resource type="Texture2D" uid="uid://bp3wlqk60ojlt" path="res://Art/UI/pausa.png" id="13_8mhmg"]
+[ext_resource type="Texture2D" uid="uid://603hw4m7ohik" path="res://Art/UI/play.png" id="14_ihrwh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lmvbr"]
+size = Vector2(16516.25, 59)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_apf5n"]
+size = Vector2(37.1875, 373.5)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_874jm"]
+radius = 61.0
+height = 122.0
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_bep7h"]
+
+[node name="Level1" type="Node2D" unique_id=1546965697]
+script = ExtResource("1_chwpn")
+frames_koya = ExtResource("4_af3po")
+frames_rj = ExtResource("6_bp12t")
+frames_soky = ExtResource("7_wrje7")
+
+[node name="Sprite2D" type="ParallaxBackground" parent="." unique_id=175109505]
+scale = Vector2(0.70348835, 0.63501626)
+transform = Transform2D(0.70348835, 0, 0, 0.63501626, 0, 0)
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="Sprite2D" unique_id=213666152]
+motion_scale = Vector2(0.5, 0.5)
+motion_mirroring = Vector2(685, 0)
+
+[node name="TextureRect" type="Sprite2D" parent="Sprite2D/ParallaxLayer" unique_id=1378058212]
+z_index = -1
+position = Vector2(281.45456, 746.43756)
+texture = ExtResource("3_m88gk")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=397369740]
+z_index = 10
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1201130806]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1403312011]
+z_index = 10
+position = Vector2(8261.125, 865.5)
+shape = SubResource("RectangleShape2D_lmvbr")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=695565561]
+position = Vector2(-14, 735)
+shape = SubResource("RectangleShape2D_apf5n")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=2038126986 groups=["jugador"]]
+z_index = 10
+script = ExtResource("3_chwpn")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1318050663]
+position = Vector2(48, 769)
+scale = Vector2(1.0643939, 0.8674029)
+sprite_frames = ExtResource("4_af3po")
+animation = &"idel"
+speed_scale = 2.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=2050051757]
+position = Vector2(54, 779)
+shape = SubResource("CapsuleShape2D_874jm")
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=892096460]
+limit_left = 0
+limit_top = 5
+limit_bottom = 950
+
+[node name="ContenedorFrutas" type="Node2D" parent="." unique_id=1814707115]
+z_index = 10
+
+[node name="GeneradorTimer" type="Timer" parent="." unique_id=577360392]
+wait_time = 1.5
+autostart = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1264844148]
+
+[node name="LabelPuntos" type="Label" parent="CanvasLayer" unique_id=1679192992]
+offset_left = 5.0
+offset_top = 103.0
+offset_right = 39.0
+offset_bottom = 135.0
+theme_override_fonts/font = ExtResource("9_xtl32")
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+
+[node name="LabelTiempo" type="Label" parent="CanvasLayer" unique_id=45910843]
+offset_left = 305.0
+offset_top = 64.0
+offset_right = 360.0
+offset_bottom = 101.0
+theme_override_colors/font_color = Color(1, 1, 0.05882353, 1)
+theme_override_fonts/font = ExtResource("9_xtl32")
+theme_override_font_sizes/font_size = 32
+
+[node name="ContenedorIconos" type="HBoxContainer" parent="CanvasLayer" unique_id=1431144344]
+material = SubResource("CanvasItemMaterial_bep7h")
+offset_left = 4.0
+offset_top = 21.0
+offset_right = 356.0
+offset_bottom = 159.0
+scale = Vector2(0.44002455, 0.4318057)
+
+[node name="manzana" type="TextureRect" parent="CanvasLayer/ContenedorIconos" unique_id=1776264019]
+layout_mode = 2
+texture = ExtResource("10_j6fun")
+stretch_mode = 6
+
+[node name="platano" type="TextureRect" parent="CanvasLayer/ContenedorIconos" unique_id=272789274]
+layout_mode = 2
+texture = ExtResource("11_efcvd")
+stretch_mode = 6
+
+[node name="fresa" type="TextureRect" parent="CanvasLayer/ContenedorIconos" unique_id=1845297339]
+layout_mode = 2
+texture = ExtResource("12_c6ru1")
+stretch_mode = 6
+
+[node name="BotonPausa" type="TextureButton" parent="CanvasLayer" unique_id=1525817451]
+offset_left = 371.0
+offset_top = 7.0
+offset_right = 859.0
+offset_bottom = 435.0
+scale = Vector2(0.097400226, 0.09260117)
+texture_normal = ExtResource("13_8mhmg")
+stretch_mode = 6
+
+[node name="BotonPlay" type="TextureButton" parent="CanvasLayer" unique_id=3621746]
+process_mode = 2
+visible = false
+offset_left = 375.99997
+offset_top = 2.0
+offset_right = 840.62225
+offset_bottom = 670.51227
+scale = Vector2(0.07615674, 0.07039515)
+texture_normal = ExtResource("14_ihrwh")
+stretch_mode = 6
+
+[node name="TimerLluvia" type="Timer" parent="." unique_id=130734652]
+wait_time = 3.0
+autostart = true
+
+[connection signal="pressed" from="CanvasLayer/BotonPausa" to="CanvasLayer" method="_on_pausa_pressed"]
+[connection signal="pressed" from="CanvasLayer/BotonPlay" to="CanvasLayer" method="_on_play_pressed"]
